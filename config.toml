@@ -2,4 +2,5 @@ baseURL = "/"
 languageCode = "en-us"
 title = "soonernotfaster"
 
+googleAnalytics = "UA-147621399-1"
 theme = "ananke"
