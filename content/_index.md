@@ -1,6 +1,6 @@
 ---
 title: "Steven Solomon's Blog"
-background: 'blue'
+featured_image: "/images/road_to_sunrise.png"
 description: "A blog about applying agile values, and practices."
 ---
 
