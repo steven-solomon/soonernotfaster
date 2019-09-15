@@ -1,9 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 
-
-[deployment]
-
-[[deployment.targets]]
-URL = "s3://soonernotfaster.com/?region=us-east-1"
+theme = "ananke"
