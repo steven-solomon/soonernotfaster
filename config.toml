@@ -1,6 +1,30 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "soonernotfaster"
+title = "Steven Solomon"
 
 googleAnalytics = "UA-147621399-1"
 theme = "ananke"
+
+[menu]
+
+[[menu.main]]
+    identifier = "book"
+    name = "book"
+    title = "book"
+    url = "https://leanpub.com/agilesoftware"
+    weight = -110
+
+[[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "blog posts about software development"
+    url = "/"
+    weight = -110
+
+[[menu.main]]
+    identifier = "about"
+    name = "about me"
+    title = "all about Steven Solomon"
+    url = "/about/"
+    weight = -110
+
