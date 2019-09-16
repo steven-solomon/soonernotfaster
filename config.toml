@@ -3,8 +3,14 @@ languageCode = "en-us"
 title = "Steven Solomon"
 
 googleAnalytics = "UA-147621399-1"
+enableRobotsTXT = true
 theme = "ananke"
 
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+  
 [menu]
 
 [[menu.main]]
