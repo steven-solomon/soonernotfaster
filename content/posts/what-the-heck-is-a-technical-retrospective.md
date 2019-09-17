@@ -49,6 +49,7 @@ Liz winces a little bit, “I’m not sure how to say this but…I hope that we 
 The team continues to go around until all of the stickies are on the board, stopping briefly to talk about what each one means.  
   
 “Alright,” Tim says. He clears his throat, “Now for the most important part.” He writes the phrase Actions Items on the far right side of the board. “We are going to dot-vote on which New Things to Try and Like to Change stickies. Everyone gets two votes.” A perplexed Mike asks, “How do we vote?”  
+
 “Grab a marker and draw a dot near the sticky you want,” responds Tim, with a smile. “Oh use the whiteboard markers please.”  
   
 “Hmm, what if the sticky I want to vote for is grouped?” asks Liz.  
