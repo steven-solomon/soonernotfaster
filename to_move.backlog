@@ -5,6 +5,7 @@
 [x] The Best Way To Improve There is a lot written about how to improve, and what you should start doing. Sometimes the most impactful thing to do is to stop doing… Published on Apr 29, 2018
 [x] What the Heck is a Technical Retrospective? How does your team improve their software processes? Published on Mar 28
 [x] Why I Write Software The story of my first program Published on Feb 28
+[x] Why I Manage My Expectations Years ago, I watched Kent Beck’s talk on finding ease at work. He described death marches and unsustainable pace. He told stories of people… Published on May 11, 2018
 
 [] Making Invalid State Impossible: In TypeScript and React Since most applications can be represented by state machines, it is beneficial to make valid states in your program as clear as possible… Published on Oct 29, 2018
 [] Which Type Of Tests Should You Write? When test driving a system, it can be tricky to know which type of test to use and when. Rather than talk about the testing pyramid, I want… Published on Sep 10, 2018
@@ -20,5 +21,5 @@
 [] Why You Should Do One Story Until It’s Done Published on May 28, 2018
 [] Learn A Long Forgotten Programming Technique Published on May 20, 2018
 [] How To Properly Apply The DRY Principle Published on May 17, 2018
-[] Why I Manage My Expectations Years ago, I watched Kent Beck’s talk on finding ease at work. He described death marches and unsustainable pace. He told stories of people… Published on May 11, 2018
+
 [] Don’t Repeat Yourself is Misunderstood (20 min read) Published on May 6, 2018
