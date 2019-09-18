@@ -2,7 +2,6 @@
 title: "Patterns of Sharing Work Between Teams"
 featured_image: "images/patterns_of_sharing_work.jpeg"
 date: 2018-08-01T07:59:41-04:00
-draft: true
 ---
 
 While I was researching different ways for teams to increase their throughput, I stumbled upon a distinction that is often not made. Framework is often used to refer to both the framework pattern and subsystem pattern. Here is a short description of those two patterns and their tradeoffs.
