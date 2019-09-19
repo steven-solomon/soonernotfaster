@@ -1,7 +1,7 @@
 ---
 title: "Which Type of Tests Should You Write?"
 featured_image: "images/which_type_of_tests_should_you_write.jpeg"
-date: 2019-09-18T19:55:33-04:00
+date: 2018-09-10T19:55:33-04:00
 ---
 
 When test driving a system, it can be tricky to know which type of test to use and when. Rather than talk about the [testing pyramid](https://martinfowler.com/bliki/TestPyramid.html), I want to focus on the questions we want answers to.
