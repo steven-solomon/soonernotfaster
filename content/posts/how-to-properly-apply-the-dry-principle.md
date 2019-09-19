@@ -47,3 +47,5 @@ Lastly, if you are unsure how to remove the duplication, its okay to leave it. [
 The DRY Principle is misunderstood. This misunderstanding leads to invalid abstractions, which change for many reasons, causing bugs in unrelated parts of the system.
 
 **If you enjoyed this post, please share it on your social media. Thanks!**
+
+*Photo by Oliver Hale on Unsplash*
