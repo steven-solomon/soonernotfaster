@@ -5,6 +5,7 @@ title = "Steven Solomon"
 googleAnalytics = "UA-147621399-1"
 enableRobotsTXT = true
 theme = "ananke"
+pygmentsCodeFences = true
 
 [sitemap]
   changefreq = "monthly"
