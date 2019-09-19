@@ -22,7 +22,7 @@ Web browsers weren’t designed to make automated testing easy (though that is c
 
 While making the feature test pass, I eventually have to integrate with an external system, such as an API, or a database. Leading me to ask *“Is my code integrated with the external system?”*. This brings the need for an Integration test.
 
-I usually keep the integration layer as thin as possible, because integrations can be flaky or painfully slow. When integrations begin to make my tests flaky — not consistently passing or failing — then I use a contract test to verify behavior.
+I usually keep the integration layer as thin as possible, because integrations can be flaky or painfully slow. When integrations begin to make my tests flaky — not consistently passing or failing — then I use a [contract test](/posts/testing-patterns-in-ruby-contract-testing/) to verify behavior.
 
 # Does It Work Well?
 
