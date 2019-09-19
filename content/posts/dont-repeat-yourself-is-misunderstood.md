@@ -88,7 +88,6 @@ def random_item(list)
 end
 ```
 
-Add Parameter Refactoring
 Next, we change the implementation to use the size of the Array instead of the hard coded 4.
 
 ```ruby
@@ -101,7 +100,6 @@ def random_item(list)
 end
 ```
 
-Notice we changed the interface and the implementation at different times. This makes our lives easier.
 Once again, our program is outputting random people, some of whom can now be a theoretical physicist. Now imagine the case where the data-structure for jobs has changed. It is now a Hash of sectors, each of which has an Array of jobs.
 
 ```ruby
