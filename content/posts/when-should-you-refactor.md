@@ -1,6 +1,7 @@
 ---
 title: "When Should You Refactor?"
 featured_image: "images/when_should_you_refactor.jpeg"
+images: ["images/when_should_you_refactor.jpeg"]
 date: 2018-07-09T20:32:25-04:00
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Adding GraphQL to Your Spring App: Made Easy"
+images: ["images/adding_a_graphql_endpoint_in_spring_app_made_easy.jpeg"]
 featured_image: "images/adding_a_graphql_endpoint_in_spring_app_made_easy.jpeg"
 date: 2018-08-13T07:42:43-04:00
 ---

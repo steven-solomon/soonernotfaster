@@ -1,6 +1,7 @@
 ---
 title: "How to Properly Apply the Dry Principle"
 featured_image: "images/how_to_properly_apply_the_dry_principle.jpeg"
+images: ["images/how_to_properly_apply_the_dry_principle.jpeg"]
 date: 2018-05-17T08:15:47-04:00
 ---
 

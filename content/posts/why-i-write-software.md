@@ -1,6 +1,7 @@
 ---
 title: "Why I Write Software"
 featured_image: "images/why_i_write_software.jpeg"
+images: ["images/why_i_write_software.jpeg"]
 date: 2019-02-28T07:53:35-04:00
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Learn Programing by Intention: A Long Forgotten Programming Technique"
 featured_image: "images/learn_programing_by_intention.jpeg"
+images: ["images/learn_programing_by_intention.jpeg"]
 date: 2018-05-20T21:02:35-04:00
 ---
 

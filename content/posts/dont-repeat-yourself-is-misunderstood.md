@@ -1,5 +1,6 @@
 ---
 title: "Don't Repeat Yourself Is Misunderstood"
+images: ["images/dont_repeat_yourself_is_misunderstood.jpeg"]
 featured_image: "images/dont_repeat_yourself_is_misunderstood.jpeg"
 date: 2018-05-06T08:23:47-04:00
 ---

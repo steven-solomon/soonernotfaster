@@ -1,6 +1,7 @@
 ---
 title: "Why I Manage My Expectations"
 featured_image: "images/why_i_manage_my_expectations.jpeg"
+images: ["images/why_i_manage_my_expectations.jpeg"]
 date: 2018-05-11T08:00:37-04:00
 ---
 

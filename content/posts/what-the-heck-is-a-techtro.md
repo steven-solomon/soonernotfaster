@@ -1,6 +1,7 @@
 ---
 title: "What the Heck Is a Techtro?"
 featured_image: "images/what_the_heck_is_a_techtro.jpeg"
+images: ["images/what_the_heck_is_a_techtro.jpeg"]
 date: 2019-03-28T08:15:42-04:00
 ---
 

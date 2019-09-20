@@ -1,6 +1,7 @@
 ---
 title: "How to Stop Past Coworkers From Calling You"
 featured_image: "images/how_to_stop_past_coworkers_from_calling_you.jpeg"
+images: ["images/how_to_stop_past_coworkers_from_calling_you.jpeg"]
 description: “I Have To Tell You About The Future”
 date: 2018-07-05T20:15:32-04:00
 ---

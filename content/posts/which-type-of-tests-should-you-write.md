@@ -1,6 +1,7 @@
 ---
 title: "Which Type of Tests Should You Write?"
 featured_image: "images/which_type_of_tests_should_you_write.jpeg"
+images: ["images/which_type_of_tests_should_you_write.jpeg"]
 date: 2018-09-10T19:55:33-04:00
 ---
 

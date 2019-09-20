@@ -1,5 +1,6 @@
 ---
 title: "Co-Signing for Technical Debt"
+images: ["images/co_signing_for_technical_debt.jpeg"]
 featured_image: "images/co_signing_for_technical_debt.jpeg"
 date: 2018-06-25T09:03:53-04:00
 ---

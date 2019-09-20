@@ -2,6 +2,7 @@
 title: "Technical Retrospective"
 description: "What, Why, How?"
 featured_image: "images/technical_retrospective_what_why_how.jpeg"
+images: ["images/technical_retrospective_what_why_how.jpeg"]
 date: 2018-05-09T08:06:54-04:00
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Writing Maybe in Ruby: Lessons Learned"
 featured_image: "images/writing_maybe_in_ruby_lessons_learned.jpeg"
+images: ["images/writing_maybe_in_ruby_lessons_learned.jpeg"]
 date: 2018-07-28T20:46:03-04:00
 ---
 

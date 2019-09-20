@@ -1,6 +1,7 @@
 ---
 title: "What Patty Taught Me"
 featured_image: "/images/what_patty_taught_me.jpeg"
+images: ["/images/what_patty_taught_me.jpeg"]
 date: 2019-02-19T15:42:24-04:00
 ---
 

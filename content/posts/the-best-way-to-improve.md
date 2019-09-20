@@ -1,6 +1,7 @@
 ---
 title: "The Best Way to Improve"
 featured_image: "/images/the_best_way_to_improve.jpg"
+images: ["/images/the_best_way_to_improve.jpg"]
 date: 2018-04-29T15:50:58-04:00
 ---
 

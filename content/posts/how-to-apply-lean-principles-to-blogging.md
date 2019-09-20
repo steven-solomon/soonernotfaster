@@ -1,5 +1,6 @@
 ---
 title: "How to Apply Lean Principles to Blogging"
+images: ["images/how_to_apply_lean_principles_to_blogging.jpeg"]
 featured_image: "images/how_to_apply_lean_principles_to_blogging.jpeg"
 date: 2018-07-23T07:48:08-04:00
 ---

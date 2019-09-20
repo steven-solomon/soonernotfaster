@@ -1,6 +1,7 @@
 ---
 title: "Why You Should Erase Your Team's Todo List"
 featured_image: "/images/why_you_should_erase_your_teams_todo_list.jpeg"
+images: ["/images/why_you_should_erase_your_teams_todo_list.jpeg"]
 date: 2018-05-18T22:51:58-04:00
 ---
 

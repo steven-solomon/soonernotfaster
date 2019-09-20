@@ -1,6 +1,7 @@
 ---
 title: "Why You Should Do One Story Until It's Done"
 featured_image: "images/why_you_should_do_one_story_until_it_is_done.jpeg"
+images: ["images/why_you_should_do_one_story_until_it_is_done.jpeg"]
 date: 2018-05-28T08:44:22-04:00
 ---
 

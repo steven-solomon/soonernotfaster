@@ -1,5 +1,6 @@
 ---
 title: "How Do You Run a Postmortem?"
+images: ["/images/how_to_run_a_postmortem.jpeg"]
 featured_image: "/images/how_to_run_a_postmortem.jpeg"
 date: 2018-09-17T15:29:13-04:00
 ---

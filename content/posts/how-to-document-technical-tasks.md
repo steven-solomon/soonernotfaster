@@ -1,6 +1,7 @@
 ---
 title: "How to Document Technical Tasks"
 featured_image: "/images/technical_tasks.jpeg"
+images: ["/images/technical_tasks.jpeg"]
 date: 2019-05-10T14:46:55-04:00
 ---
 

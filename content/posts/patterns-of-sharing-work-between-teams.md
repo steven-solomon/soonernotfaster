@@ -1,6 +1,7 @@
 ---
 title: "Patterns of Sharing Work Between Teams"
 featured_image: "images/patterns_of_sharing_work.jpeg"
+images: ["images/patterns_of_sharing_work.jpeg"]
 date: 2018-08-01T07:59:41-04:00
 ---
 

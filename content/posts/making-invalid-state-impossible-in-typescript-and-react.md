@@ -1,6 +1,7 @@
 ---
 title: "Making Invalid State Impossible: in TypeScript and React"
 featured_image: "images/making_invalid_state_impossible_in_typescript_and_react.jpeg"
+images: ["images/making_invalid_state_impossible_in_typescript_and_react.jpeg"]
 date: 2018-10-29T21:14:59-04:00
 ---
 
