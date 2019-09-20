@@ -146,6 +146,6 @@ account.add_transaction(transaction)
 account.print_balance
 ```
 
-*Photo by Jeremiah Berman on Unsplash*
-
 **If you enjoyed this post, please share it on your social media. Thanks!**
+
+*Photo by Jeremiah Berman on Unsplash*
