@@ -1,5 +1,6 @@
 ---
 title: "About me"
+images: ["/images/road_to_sunrise.jpg"]
 featured_image: "/images/road_to_sunrise.jpg"
 description: "Who I am, and what I value."
 ---
