@@ -6,13 +6,23 @@ date: 2019-09-22T09:18:08-04:00
 draft: true
 ---
 
-So you have written an implementation in your Rails app, but your team won't accept your Pull Request until there are unit tests. Whats more is that your implementation is primarily changes to the private or protected methods of a class. How do you test this code? We explore your options below.
+So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more, your changes are to private methods of a class. In frustration you may ask, "How do I test this code!?"
 
-TK image of private and protected objects
+Testing private methods may seem difficult when not using TDD, but this article gives you two strategies that will make your life easier, so you can get your feature merged. 
 
-# The problem
+# Option #1: Test via the public interface 
 
-Imagine you are working on a finance application. This code includes the Account class below. Notice that the `Account` is currently summing all transactions as part of calculating balance. In the `Account` class there is a private method `:sum` that totals the transactions. 
+## The problem
+
+Imagine you are working on a finance application. Your Product Manager assigns the following story to your iteration:
+
+```gherkin
+As an account holder
+I want to *not* see pending transactions applied to my balance
+So that I know the current amount of money I have in the account
+```
+
+This feature requires you to changes the `Account` class. Currently it's private `:sum` method is the place that totals all transactions into the account balance.
 
 ```ruby
 class Account
@@ -48,7 +58,7 @@ class Transaction
 end
 ```
 
-Your story is to filter out pending transactions from the current balance. So you change the private method to filter out the transactions that are pending.
+The tweak feels straightforward to you, so you modify the private method. It now filters out the transactions that have the `pending` flag set to a `truthy` value.
 
 ```ruby
 # Account 
@@ -62,15 +72,15 @@ end
 # ...
 ```
 
-But how are you going to test this change?
+Now that the feature work is done, how do you test this change?
 
-## Option #1: Test via the public interface 
+## Solution
 
-The public functions of a class ultimately invoke the private ones. So a change in those private methods, should either result in a change of state, or a change in behavior of the class. One or both of these should be observable via the public methods of the class. 
+Since public functions ultimately invoke the private ones. We would expect that a change in those private methods, should either result in a change of state, or a change in behavior of the class. These difference will be observable via the public methods of the class. 
 
-So the most straightforward way to test the private behavior is to call the public method with data that will work on the private method in the way you want.
+In order to test that behavior we need to construct a set of test data that will exercise the private method in the way we want.
 
-Here we do this with the public by passing in only pending transactions to the `Account`.
+Here we do this with the public by passing in only pending transactions to the `Account`, then we check that the balance is `zero`.
 
 ```ruby
 it 'ignores pending transactions' do
@@ -83,15 +93,19 @@ it 'ignores pending transactions' do
 end
 ```
 
-## Option #2: Move methods to a different class
+# Option #2: Move methods to a different class
 
-"One class' private method, is another's public method" - TK find author
+## Problem
 
-The simplest thing you can do when trying to test a private method is identify the idea it represents and create a new class that it can be a method on. Once on that new class, the method can be made public. This new public method will be easy to test.
+Another story comes into our backlog. This one asks us to calculate the statement balance for an `Account`. 
 
-The fact that you want to test it directly in someway is a hint, that it belongs on it's own class.
+```gherkin
+As an account holder
+I want to see the transactions for this statement
+So that I know how much I have spent
+```
 
-Another story comes through that calculates the statement balance for an `Account`. The `:statement_balance` method looks at the current date and sums the transactions for that month. This code introduces a new condition around filtering. If the `is_statement` flag is `true` then the month values are selected, else the pending transactions are ignored.
+This change also affects our `Account` class. We have added the `:statement_balance` method, which looks at the current date and sums the transactions for the current month. This code introduces a new condition around filtering. If the `is_statement` flag is `true` then the month values are selected, else the pending transactions are ignored.
 
 ```ruby
 class Account
@@ -120,7 +134,15 @@ class Account
 end
 ```
 
-The first step here is to not misapply the DRY Principle and remove the conditions on from the code.
+## Solution 
+
+In order to solve this testing issue, let's look at testing this function by moving it to another class.
+
+The first thing you should notice, is that the user story mentions the idea of a `Statement` this is a missing domain concept in our system.
+
+It would provide a great place to hang the filtering logic, we have just wrote. Once we move the `statement_balance` method onto that new class, the method will be public, allowing us to test it more easily.
+
+The first step here is to not misapply the DRY Principle and separate to two unrelated filtering operations from the code. Notice that `:sum` and 
 
 ```ruby
 class Account
@@ -135,7 +157,20 @@ class Account
 
   private
 
-  # sums all non_pending transactions
+  # Removed code
+  # def sum(all_transactions, is_statement = false)
+  #   transactions_to_total = is_statement ?
+  #                             all_transactions.select do |t|
+  #                               t.date.month == Date.today.month && t.date.year == Date.today.year
+  #                             end
+  #                             : all_transactions.reject {|t| t.pending}
+
+  #   transactions_to_total
+  #     .map {|t| t.amount}
+  #     .reduce(0) {|acc, amount| acc + amount}
+  # end
+
+  # Added. Sums all non_pending transactions
   def sum(all_transactions)
     all_transactions
       .reject {|t| t.pending}
@@ -143,7 +178,7 @@ class Account
       .reduce(0) {|acc, amount| acc + amount}
   end
 
-  # sums statements for the current month
+  # Added. Sums statements for the current month
   def sum_statement(all_transactions)
     all_transactions
       .select {|t| t.date.month == Date.today.month && t.date.year == Date.today.year}
@@ -193,12 +228,12 @@ end
 
 Unit Testing can be a frustrating endeavor as it gives you feedback on the design of your code. Your choice can be to respond to or ignore that feedback.
 
-With both as an option, you can test your private methods in one of two ways:
+You can act on the feedback of your code being difficult to test in the following ways:
 
 1) Test via the public methods of the class
 2) Move the method to another class and make it public
 
-There are other cunning ways to try to invoke private methods, however I view them as bad practice so you will have to look elsewhere to find ways to ignore the design feedback you are recieving ;)
+It may be tempting to try and find ways to invoke your private class using the reflection APIs of the language, but this will make your tests brittle, and hard to maintain. Whenever possible, it is better to simplify the design of the code, rather than come up with cunning solutions.
 
 **If you enjoyed this post, please share it on your social media. Thanks!**
 
