@@ -6,19 +6,17 @@ date: 2019-09-22T09:18:08-04:00
 draft: true
 ---
 
-So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more, your changes are to private methods of a class. In frustration you may ask, "How do I test this code!?"
+So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more, your changes are to private methods of a class. In frustration you shout, "How do I test this code!?"
 
 Testing private methods may seem difficult when not using TDD, but this article gives you two strategies that will make your life easier, so you can get your feature merged. 
 
-# Option #1: Test via the public interface 
+# Test via the public interface 
 
-## The problem
-
-Imagine you are working on a finance application. Your Product Manager assigns the following story to your iteration:
+Imagine you are working on a finance application, and your Product Manager assigns the following story to your iteration:
 
 ```gherkin
 As an account holder
-I want to *not* see pending transactions applied to my balance
+I want to NOT see pending transactions applied to my balance
 So that I know the current amount of money I have in the account
 ```
 
