@@ -20,7 +20,7 @@ I want to NOT see pending transactions applied to my balance
 So that I know the current amount of money I have in the account
 ```
 
-There currently is an `Account` class that allows client code to add, and sum transactions. Each `Transaction` has an amount, description, and pending flag. The pending transaction feature requires changes to the private `:sum` method, where all the account balance is calculated.
+There currently is an `Account` class that allows client code to add, and sum transactions. Each `Transaction` has an amount, description, and pending flag. The pending transaction feature requires changes to the private `sum` method, where all the account balance is calculated.
 
 ```ruby
 class Account
@@ -101,7 +101,7 @@ I want to see the transactions for this statement
 So that I know how much I have spent
 ```
 
-This change also affects our `Account` class. We have added the `:statement_balance` method, which looks at the current date and sums the transactions for the current month. This code introduces a new condition around filtering. If the `is_statement` flag is `true` then the month values are selected, else the pending transactions are ignored.
+This change also affects our `Account` class. We have added the `statement_balance` method, which looks at the current date and sums the transactions for the current month. This code introduces a new condition around filtering. If the `is_statement` flag is `true` then the month values are selected, else the pending transactions are ignored.
 
 ```ruby
 class Account
@@ -136,9 +136,9 @@ In order to solve this testing issue, let's look at testing this function by mov
 
 The first thing you should notice, is that the user story mentions the idea of a `Statement`. This is a missing domain concept in our system.
 
-Creating a class for the statement concept would provide a more logical place to hang code related to it. With the new class created, we can move the `:sum` logic to it. The method will be public, allowing us to test it more easily.
+Creating a class for the statement concept would provide a more logical place to hang code related to it. With the new class created, we can move the `sum` logic to it. The method will be public, allowing us to test it more easily.
 
-The first step in the move method refactoring, is to not [misapply the DRY Principle](/posts/dont-repeat-yourself-is-misunderstood/) and separate the two unrelated filtering operations from the code. Notice that `:sum` and `:sum_statement` are separate, and neither contain conditions.
+The first step in the move method refactoring, is to not [misapply the DRY Principle](/posts/dont-repeat-yourself-is-misunderstood/) and separate the two unrelated filtering operations from the code. Notice that `sum` and `sum_statement` are separate, and neither contain conditions.
 
 ```ruby
 class Account
