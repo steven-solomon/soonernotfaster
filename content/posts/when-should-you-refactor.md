@@ -9,7 +9,7 @@ I find that there are two moments that best suit using refactoring; practicing T
 
 As part of the TDD flow, we restructure the code we wrote in the last ten minutes, after the red and green stages. We iterate until we find a design that is the best we can think of at the moment, for the features we have now. The best designs follow the [Four Simple Rules Of Design](https://www.martinfowler.com/bliki/BeckDesignRules.html). We don’t concern ourselves with future features and guesses at optimizations as [we aren’t gonna need it](http://wiki.c2.com/?YouArentGonnaNeedIt).
 
-When adding a new feature, we use refactoring differently. We use it to make the feature easy to add. Sometimes this means moving multiple pieces of code closer, to prevent shotgun surgery. In other cases, it is creating a layer of indirection, so an new algorithm can be added. This follows the mantra; [make the change easy, make then easy change](https://www.facebook.com/notes/kent-beck/runright-and-vice-versa/566483323384536).
+When adding a new feature, we use refactoring differently. We use it to make the feature easy to add. Sometimes this means moving multiple pieces of code closer, to prevent shotgun surgery. In other cases, it is creating a layer of indirection, so an new algorithm can be added. This follows the mantra; [make the change easy then make then easy change](https://www.facebook.com/notes/kent-beck/runright-and-vice-versa/566483323384536).
 
 # Permission Not Needed
 
