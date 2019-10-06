@@ -8,7 +8,7 @@ draft: true
 
 So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more, your changes are to private methods of a class. In frustration you shout, "How do I test this code!?"
 
-Testing private methods may seem difficult when not using TDD, but this article gives you two strategies that will make your life easier, so you can get your feature merged. 
+Testing private methods may seem difficult when not using TDD, but this article gives you two strategies that will make your life easier, so that you can get your feature merged. 
 
 # Test via the public interface 
 
@@ -20,7 +20,7 @@ I want to NOT see pending transactions applied to my balance
 So that I know the current amount of money I have in the account
 ```
 
-This feature requires you to changes the `Account` class. Currently it's private `:sum` method is the place that totals all transactions into the account balance.
+There currently is an `Account` class that allows client code to add, and sum transactions. Each `Transaction` has an amount, description, and pending flag. The pending transaction feature requires changes to the private `:sum` method, where all the account balance is calculated.
 
 ```ruby
 class Account
@@ -56,7 +56,7 @@ class Transaction
 end
 ```
 
-The tweak feels straightforward to you, so you modify the private method. It now filters out the transactions that have the `pending` flag set to a `truthy` value.
+A modification to the private method, filters out the transactions that have the `pending` flag set to a `truthy` value.
 
 ```ruby
 # Account 
@@ -72,13 +72,13 @@ end
 
 Now that the feature work is done, how do you test this change?
 
-## Solution
+## Testing strategy
 
 Since public functions ultimately invoke the private ones. We would expect that a change in those private methods, should either result in a change of state, or a change in behavior of the class. These difference will be observable via the public methods of the class. 
 
 In order to test that behavior we need to construct a set of test data that will exercise the private method in the way we want.
 
-Here we do this with the public by passing in only pending transactions to the `Account`, then we check that the balance is `zero`.
+Here we do this by passing in only pending transactions to the `Account`, then we check that the balance is `zero`.
 
 ```ruby
 it 'ignores pending transactions' do
@@ -91,9 +91,7 @@ it 'ignores pending transactions' do
 end
 ```
 
-# Option #2: Move methods to a different class
-
-## Problem
+# Move methods to a different class
 
 Another story comes into our backlog. This one asks us to calculate the statement balance for an `Account`. 
 
@@ -132,15 +130,15 @@ class Account
 end
 ```
 
-## Solution 
+## Testing strategy
 
 In order to solve this testing issue, let's look at testing this function by moving it to another class.
 
-The first thing you should notice, is that the user story mentions the idea of a `Statement` this is a missing domain concept in our system.
+The first thing you should notice, is that the user story mentions the idea of a `Statement`. This is a missing domain concept in our system.
 
-It would provide a great place to hang the filtering logic, we have just wrote. Once we move the `statement_balance` method onto that new class, the method will be public, allowing us to test it more easily.
+Creating a class for the statement concept would provide a more logical place to hang code related to it. With the new class created, we can move the `:sum` logic to it. The method will be public, allowing us to test it more easily.
 
-The first step here is to not misapply the DRY Principle and separate to two unrelated filtering operations from the code. Notice that `:sum` and 
+The first step in the move method refactoring, is to not [misapply the DRY Principle](/posts/dont-repeat-yourself-is-misunderstood/) and separate the two unrelated filtering operations from the code. Notice that `:sum` and `:sum_statement` are separate, and neither contain conditions.
 
 ```ruby
 class Account
@@ -186,7 +184,7 @@ class Account
 end
 ```
 
-Once the code is separated out logically, if it is still too difficult to test through the public interface. Then it makes sense to move this code to another class, and parameterize whatever you need to make it testable. In the code below, we parameterize the date.
+Next let's move the code to the `Statement` class, and parameterize the date. The parameter will make it more testable.
 
 ```ruby
 # Account class
@@ -207,7 +205,7 @@ class Statement
 end
 ```
 
-With the `:sum` now a public method on `Statement`, with the hard to control data as a parameter. It should be easier to test.
+Let's write a test around `Statement#sum` that passes in a variety of dates and verifies the sum only contains the transactions for the parameterized month.
 
 ```ruby
 it 'Statement#sum' do
