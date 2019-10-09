@@ -1,16 +1,15 @@
 ---
-title: "How to Test Private Methods in Ruby and Rails"
+title: "How to Test Private Methods in Ruby and Rails?"
 featured_image: "images/how_to_test_private_methods_in_ruby_and_rails.jpeg"
 images: ["images/how_to_test_private_methods_in_ruby_and_rails.jpeg"]
-date: 2019-09-22T09:18:08-04:00
-draft: true
+date: 2019-10-09T09:18:08-04:00
 ---
 
-So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more, your changes are to private methods of a class. In frustration you shout, "How do I test this code!?"
+So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more your changes are to private methods of a class. In frustration you shout, "How do I test this code?"
 
-Testing private methods may seem difficult when not using TDD, but this article gives you two strategies that will make your life easier, so that you can get your feature merged. 
+**Testing private methods may seem difficult when not using TDD, but this article gives you two strategies: "testing via the public interface", and "move methods to a different class". These will make your life easier, so that you can get your feature merged.**
 
-# Test via the public interface 
+# Strategy 1: Test via the public interface 
 
 Imagine you are working on a finance application, and your Product Manager assigns the following story to your iteration:
 
@@ -20,7 +19,7 @@ I want to NOT see pending transactions applied to my balance
 So that I know the current amount of money I have in the account
 ```
 
-There currently is an `Account` class that allows client code to add, and sum transactions. Each `Transaction` has an amount, description, and pending flag. The pending transaction feature requires changes to the private `sum` method, where all the account balance is calculated.
+There currently is an `Account` class that allows client code to add, and sum transactions. Each `Transaction` has an amount, description, and pending flag. The pending transaction feature requires changes to the private `sum` method, where the account balance is calculated.
 
 ```ruby
 class Account
@@ -74,11 +73,11 @@ Now that the feature work is done, how do you test this change?
 
 ## Testing strategy
 
-Since public functions ultimately invoke the private ones. We would expect that a change in those private methods, should either result in a change of state, or a change in behavior of the class. These difference will be observable via the public methods of the class. 
+Since public functions ultimately invoke the private ones. We would expect that a change in those private methods, should either result in a change of state, or a change in behavior of the class. These difference will be observable via the public methods of the class. Said another way, we can test the `sum` method via the `balance` method that calls it.
 
 In order to test that behavior we need to construct a set of test data that will exercise the private method in the way we want.
 
-Here we do this by passing in only pending transactions to the `Account`, then we check that the balance is `zero`.
+Here we do this by passing in only pending transactions to the `Account`, then we check that `balance` returns `0`.
 
 ```ruby
 it 'ignores pending transactions' do
@@ -91,17 +90,17 @@ it 'ignores pending transactions' do
 end
 ```
 
-# Move methods to a different class
+# Strategy 2: Move methods to a different class
 
 Another story comes into our backlog. This one asks us to calculate the statement balance for an `Account`. 
 
 ```gherkin
 As an account holder
 I want to see the transactions for this statement
-So that I know how much I have spent
+So that I know how much I have spent this month
 ```
 
-This change also affects our `Account` class. We have added the `statement_balance` method, which looks at the current date and sums the transactions for the current month. This code introduces a new condition around filtering. If the `is_statement` flag is `true` then the month values are selected, else the pending transactions are ignored.
+This change also affects our `Account` class. We have added the `statement_balance` method, which looks at the current date and sums the transactions for the current month. This code introduces a new filtering condition for the `is_statement` flag. If the `is_statement` flag is `true`, then the transactions for that month are selected, else the pending transactions are ignored.
 
 ```ruby
 class Account
@@ -136,9 +135,9 @@ In order to solve this testing issue, let's look at testing this function by mov
 
 The first thing you should notice, is that the user story mentions the idea of a `Statement`. This is a missing domain concept in our system.
 
-Creating a class for the statement concept would provide a more logical place to hang code related to it. With the new class created, we can move the `sum` logic to it. The method will be public, allowing us to test it more easily.
+Creating a class for the statement concept would provide a more logical place to hang code related to it. With the new class created, we can move the `sum` logic to it. The method will be public on that class, allowing us to test it more easily.
 
-The first step in the move method refactoring, is to not [misapply the DRY Principle](/posts/dont-repeat-yourself-is-misunderstood/) and separate the two unrelated filtering operations from the code. Notice that `sum` and `sum_statement` are separate, and neither contain conditions.
+The first step in the move method refactoring, is to not [misapply the DRY Principle](/posts/how-to-properly-apply-the-dry-principle/) and separate the two unrelated filtering operations from the code. Notice that `sum` and `sum_statement` are separate, and neither contain if-statements.
 
 ```ruby
 class Account
@@ -226,10 +225,10 @@ Unit Testing can be a frustrating endeavor as it gives you feedback on the desig
 
 You can act on the feedback of your code being difficult to test in the following ways:
 
-1) Test via the public methods of the class
-2) Move the method to another class and make it public
+1. Test via the public methods of the class
+2. Move the method to another class and make it public
 
-It may be tempting to try and find ways to invoke your private class using the reflection APIs of the language, but this will make your tests brittle, and hard to maintain. Whenever possible, it is better to simplify the design of the code, rather than come up with cunning solutions.
+It may be tempting to try and find ways to invoke your private class using the reflection APIs of the language, but this will make your tests brittle, and hard to read. Whenever possible, it is better to simplify the design of the code, rather than come up with cunning solutions.
 
 **If you enjoyed this post, please share it on your social media. Thanks!**
 

@@ -39,13 +39,14 @@ Let’s refresh our understanding of the original definition of DRY.
 Rather than seek to remove code that has similar structures, we should focus on each idea existing once. In our example random jobs is one idea and random names is another. Code for different ideas changes at different times, so it’s best to keep them separate.
 
 Here are some tips to see if duplication is representing the same idea:
+
 - Ask your Product Manager (or Stakeholder) would they expect the behaviors to affect one another
 - Try to reason about the ideas separately. Would they change at the same time? If they would, they are duplicates
 
-Lastly, if you are unsure how to remove the duplication, its okay to leave it. [[Duplication is cheaper than the wrong abstraction — Sandi Metz](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
+Lastly, if you are unsure how to remove the duplication, its okay to leave it. [Duplication is cheaper than the wrong abstraction — Sandi Metz](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
 
 # TLDR;
-The DRY Principle is misunderstood. This misunderstanding leads to invalid abstractions, which change for many reasons, causing bugs in unrelated parts of the system.
+[The DRY Principle is misunderstood](/posts/dont-repeat-yourself-is-misunderstood/). This misunderstanding leads to invalid abstractions, which change for many reasons, causing bugs in unrelated parts of the system.
 
 **If you enjoyed this post, please share it on your social media. Thanks!**
 
