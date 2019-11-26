@@ -16,3 +16,5 @@ As my career continues to progress, I want to share what I have learned with tho
 Happy Coding
 
 Steve Solomon
+
+*As with all things I stand on the shoulders of giants, I have named this site after a [blog post by Tim Ottinger](https://agileotter.blogspot.com/2018/07/q-and-on-velocity-part-iii.html)*
