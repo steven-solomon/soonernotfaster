@@ -1,26 +1,29 @@
 ---
 title: "Step by Step Guide to Improving Cohesion in Elixir"
+featured_image: "images/step_by_step_guide_to_improving_cohesion_in_elixir.jpeg"
+images: ["images/step_by_step_guide_to_improving_cohesion_in_elixir.jpeg"]
 date: 2020-05-25T11:04:29-04:00
 draft: false
 ---
 
 It is the kind of code that makes you squint. It could be that stray business logic in a controller, a view that queries the database, or even two intertwined features that change for different reasons. I am talking about code that is hard to read.
 
-Cryptic code slows everything down. It is the thing that makes a seemingly simple feature take weeks. Though we all can recognize unreadable code, it seems to keep showing up in our code-bases. This has to do with a lack of Cohesion. Now let's explore the concept of Cohesion, so that we can start taking control of our code.
+Cryptic code slows everything down. It is the thing that makes a seemingly simple feature take weeks. Though we all can recognize unreadable code, it seems to keep showing up in our code-bases. This has to do with a lack of *Cohesion*. Read on to explore the concept of *Cohesion*, how to use it to start taking control of your code.
 
 # What is Cohesion?
 
 Hard to read code often mixes unrelated concepts together in one place. This style often requires the reader to juggle multiple ideas in their mind. It puts the responsibility on the reader to figure out what is relevant, and what is not. And that is not fun.
 
-Cohesive code doesn't make the reader sort through the puzzle. Instead, this approach puts code that is related together in one location. Any unrelated code is placed at a distance.
+**Cohesion is a property of software that doesn't make the reader sort through a puzzle. When followed, this approach puts code that is related together in one location, and any unrelated code at a distance.**
 
 For a more concrete example, please take a look at the module below. Ask yourself, “Is the `is_admin/1` function related to the `determine_score/3` function?”
 
-```
+```elixir
 defmodule User do
   def is_admin(user_id)
     #...
   end
+  
   def determine_score(game, user_id, date) do
      # ...
   end
@@ -29,7 +32,7 @@ end
 
 If the answer doesn't spring forth, ask yourself, "Can I think about these parts separately? Why?" 
 
-We can come to the answer of yes, because identifying a user as an admin, has no effect on what their score is in the game. 
+We can come to the answer of yes, when we notice that identifying a user as an admin, has no effect on what their score is in the game. 
 
 Here are a few other questions to ask so you can determine if code is not Cohesive:
 
@@ -39,43 +42,43 @@ Here are a few other questions to ask so you can determine if code is not Cohesi
 
 ## Context Matters
 
-The questions above can provide valuable hints that the code may lack cohesion. However, cohesion is a continuum. The ideal amount of cohesion depends on the size and complexity of your code. The larger and more complex the parts become, the more you will need to separate them. 
+The questions above can provide valuable hints that the code may lack Cohesion. However, Cohesion is a continuum. The ideal amount of Cohesion depends on the size and complexity of your code. The larger and more complex the parts become, the more you will need to separate them. 
 
 We can solidify this idea by considering how two unrelated functions interact at different scales.
 
-First, imagine two tiny unrelated functions nestled together in the same module. This doesn’t seem like a big deal. Both pieces are small, and we can very quickly determine that they are unrelated.
+First, imagine two tiny unrelated functions nestled together in the same module—like the example above. This doesn’t seem like a big deal. Both pieces are small, and we can very quickly determine that they are unrelated.
 
-Next, consider two 65+ line unrelated functions in the same module—along with their associated helpers functions. All of those moving parts provide the opportunity to create confusion. Trying to determine which parts are related, is enough to make anyone's head spin. When the reader decide can not decide what to focus on, then they will have to re-read code several times.
+Next, consider two 65+ line unrelated functions in the same module—along with their associated helpers functions. All of those moving parts provide the opportunity to create confusion. Trying to determine which parts are related, is enough to make anyone's head spin. When the reader can not decide what to focus on, then they will have to re-read code several times.
 
-As a general rule of thumb, it is a good idea to separate unrelated code as its size and complexity increases. However, sometimes the damage is done, and unrelated code is already in one place. In the next section we explore how to refactor it apart.
+*As a general rule of thumb, it is a good idea to separate unrelated code as its size and complexity increases*. However, sometimes the damage is done, and unrelated code is already in one place. In the next section we explore how to refactor it apart.
 
 # Separating Unrelated Code
 
 So you have identified some code that should be separate! How do you move it apart? Not to worry, *the Extract Module* refactoring technique is here to save the day.
 
-The Extract Module refactoring technique moves functions from one module into a newly created module. This allows us to increase the cohesion of our code, and therefore increase its readability. This refactoring pattern is based off of [Martin Fowler's Extract Class](https://refactoring.guru/extract-class) and [Move Method](https://refactoring.guru/move-method).
+The Extract Module refactoring technique moves functions from one module into a newly created module. This allows us to increase the Cohesion of our code, and therefore increase its readability. This refactoring pattern is based off of [Martin Fowler's Extract Class](https://refactoring.guru/extract-class) and [Move Method](https://refactoring.guru/move-method).
 
 Below you will find the steps to the Extract Module refactoring. Like all refactorings it is very important to verify the code still works after every step. The best way to check is by running the unit tests—though I will omit this important phase in the rest of this article.
 
 Here are the steps for the Extract Module refactoring:
 
 1. Identify the business concept to extract
-1. Rename the existing Module if it conflicts with the name of the business concept
-1. Create a Module with the name of the business concept
-1. Move data to the newly created Module
-1. Replace all uses of the local data with the Module
+1. Rename the existing module if it conflicts with the name of the business concept
+1. Create a module with the name of the business concept
+1. Move data to the newly created module
+1. Replace all uses of the local data with the module
 1. Use the Extract Function Refactoring on business logic
-1. Use the Move Function Refactoring to move a function that references data to the new Module
+1. Use the Move Function Refactoring to move a function that references data to the new module
 1. Repeat for all functions
 1. Repeat for all data
 
 # Applying the Extract Module Refactoring
 
-Beyond this list of steps, we still need some code to perform them on. I have provided an example in Elixir below. The aspect of this code to focus on is that business logic is tied up in a structure where it doesn't belong—a GenServer. For the purpose of this article, you can think about GenServer as if it is a controller in Rails, or a middleware function in Express. In both situations, the business logic and routing logic will change for different reasons. 
+Below you will find the example code we will use to perform the Extract Module refactoring. This code contains business logic in a structure where it doesn't belong—a GenServer. For the purpose of this article, you can think about GenServer as if it is a controller in Rails, or a middleware function in Express. In both situations, the business logic and routing logic will change for different reasons. 
 
-If you want to better understand GenServers, here is an article that shows you what they are and how to test them: [What is a GenServer in Elixir, and How Do I Write One?](https://www.stridenyc.com/blog/what-is-a-genserver-in-elixir), Yet, all you need to know for maximizing cohesion is that business logic and GenServers should be separate.
+If you want to better understand GenServers, here is an article that shows you what they are and how to test them: [What is a GenServer in Elixir, and How Do I Write One?](https://www.stridenyc.com/blog/what-is-a-genserver-in-elixir) Yet, all you need to know for maximizing Cohesion is that business logic and GenServers should be separate.
 
-With GenServer as a controller, let's take a look at the code below. Notice the code implements logic for a BookStore, as well as GenServer wiring code. The BookStore is able to give clients all its books, add new books, query by book name, and query by id.
+Thinking of GenServer as a controller, let's take a look at the code below. Notice the code implements logic for a BookStore, as well as GenServer wiring code. The BookStore is able to give clients all its books, add new books, query by book name, and query by id.
 
 ```elixir
 defmodule BookStore do
@@ -165,7 +168,7 @@ end
 
 The first step of this refactoring process is to *Identify the business concept to extract*. As mentioned above, the concept we want to extract is a `BookStore`.
 
-With our goal of extracting a `BookStore`, it is time to *Rename the existing Module*. Rename the `BookStore` module—which is a GenServer— to be called `BookStoreGenServer`. This ensures the names will not conflict.
+With our goal of extracting a `BookStore`, it is time to *Rename the existing module*. Rename the `BookStore` module—which is a GenServer—to be called `BookStoreGenServer`. This ensures the names will not conflict.
 
  ```diff
 - defmodule BookStore do
@@ -174,14 +177,14 @@ With our goal of extracting a `BookStore`, it is time to *Rename the existing Mo
 end
  ```
 
-Now you can *Create a Module with the name of the business concept*. This new module will ultimately hold all of the BookStore logic. Create a new module named `BookStore`.
+Now you can *Create a module with the name of the business concept*. This new module will ultimately hold all of the BookStore logic. Create a new module named `BookStore`.
 
 ```
 defmodule BookStore do
 end
 ```
 
-Since we have a module to represent the business concept, it is time to *Move data to the newly created Module*. In order to convert the `BookStore` into a data structure add a `defstruct` statement containing the Keyword List with one key, `:books`, with a value of an empty List.
+Since we have a module to represent the business concept, it is time to *Move data to the newly created module*. In order to convert the `BookStore` into a data structure add a `defstruct` statement containing the Keyword List with one key, `:books`, with a value of an empty List.
 
 ```
 defmodule BookStore do
@@ -189,7 +192,7 @@ defmodule BookStore do
 end
 ```
 
-It is time to go through and *Replace all uses of the local data with the Module*. This entails changing the initialization of the state to use the `BookStore` struct, as well as changing any callback functions to destructure out the relevant attributes.
+It is time to go through and *Replace all uses of the local data with the module*. This entails changing the initialization of the state to use the `BookStore` struct, as well as changing any callback functions to destructure out the relevant attributes.
 
 ```diff
 def init(:ok) do
@@ -198,7 +201,7 @@ def init(:ok) do
 end
 ```
 
-With the state of the GenServer now a BookStore module, the way the state is used in all `handle_*` functions need to change. Below is an example of how to make this change for a `handle_call` function.
+With the state of the GenServer now holding a BookStore struct, the way the state is used in all `handle_*` functions need to change. Below is an example of how to make this change for a `handle_call` functions.
 
 Notice we use pattern matching to pull out the relevant data in the arguments. It is also important to make sure to return the entire BookStore in the reply tuple on the last line of the callback.
 
@@ -214,9 +217,11 @@ Notice we use pattern matching to pull out the relevant data in the arguments. I
   end
 ```
 
-Here is an example of how to change it in `handle_cast/2`. In this type of callback function, we want to pattern match the books out of the BookStore. Bear in mind, we will not need a variable for the store since we will create a new one each time.
+Next, you will find an example of how to change it in `handle_cast` functions. 
 
-```elixir
+In this type of callback function, we want to pattern match the books out of the BookStore. Bear in mind, we will *not* need a variable for the store since we will create a new one each time.
+
+```diff
 -  def handle_cast({:purchase, id_to_purchase}, books) do
 +  def handle_cast({:purchase, id_to_purchase}, %BookStore{books: books}) do
     updated_books =
@@ -233,11 +238,15 @@ Here is an example of how to change it in `handle_cast/2`. In this type of callb
   end
 ```
 
-Continue converting all callback functions to destructure the books attribute out of the `BookStore` struct. When completed, it is time to move business operations onto the `BookStore` module. This process's first step is to *Use the [Extract Function](https://refactoring.com/catalog/extractFunction.html) Refactoring on all business logic*. Once the function is extracted, we can Use *[Move Function](https://refactoring.com/catalog/moveFunction.html) refactoring to move a function that references data to the new Module*. As a reference you can find a detailed explanation in [Fowler's book](https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature-ebook/dp/B07LCM8RG2/ref=sr_1_1?dchild=1&keywords=refactoring&qid=1589929247&sr=8-1). Though it is necessary to follow the steps that Fowler defines in his book due to the lack of automated refactoring support in Elixir—I hope that changes soon.
+Continue converting all callback functions to destructure the books attribute out of the `BookStore` struct. When completed, you will be ready to move business operations into the `BookStore` module. 
 
-Now that you have learned the two steps (Extract Function, and Move Function), the process can be repeated for all operations you wish to extract from the GenServer. Below is another example of extracting then moving the `all_books/1` function.
+This process's first step is to *Use the [Extract Function](https://refactoring.com/catalog/extractFunction.html) Refactoring on all business logic*. Once all function are extracted, we can Use *[Move Function](https://refactoring.com/catalog/moveFunction.html) refactoring to move a function that references data to the new module*. 
 
-```elixir
+As a reference you can find a detailed explanation of these refactorings in [Fowler's book](https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature-ebook/dp/B07LCM8RG2/ref=sr_1_1?dchild=1&keywords=refactoring&qid=1589929247&sr=8-1). It is necessary to follow the steps that Fowler defines in his book due to the lack of automated refactoring support in Elixir—I hope this will change soon.
+
+Now that you have learned the two steps (Extract Function, and Move Function), the process can be repeated for all operations you wish to extract from the GenServer. Below is an example of extracting then moving the `all_books/1` function.
+
+```diff
 defmodule BookStore do
   defstruct [books: []]
 
@@ -261,9 +270,11 @@ defmodule BookStoreGenServer do
 end
 ```
 
-Observe below a second example of moving the `find_by_id/2`. After moving this function, it is also possible to rename the `id_to_find` to `id` in the handle_call callback.
+Here is another example, this time for the `find_by_id/2`. 
 
-```elixir
+After moving this function, it is also possible to rename the `id_to_find` to `id` in the handle_call callback.
+
+```diff
 defmodule BookStore do
   # ...
 
@@ -289,7 +300,9 @@ end
 
 ```
 
-Continue to follow these steps until all data and functions are moved from the GenServer to the `BookStore` module. Here is what a completed refactoring could look like:
+Continue to follow these steps until all data and functions are moved from the GenServer to the `BookStore` module. 
+
+# Completed Refactoring for Extract Module
 
 ```elixir
 defmodule BookStore do
@@ -396,7 +409,10 @@ end
 
 # Improving Your Code
 
-Our code now separates business logic from the delivery mechanism—the GenServer. Refactoring is one of the most beneficial things you can do to improve the readability of your code. By constantly improving its structure, you will keep your code alignment with the team's current understanding of the business. This will allow you to keep writing software that your customers will love to use.
+Our code now separates business logic from the delivery mechanism—the GenServer. You are now able to increase the Cohesion of your code by using the *Extract Module* refactoring. This is a critical step in the journey to writing code that is easy to read.
 
-Understanding Cohesion and the *Extract Module* refactoring is just one step in the long journey to writing code that is easy to read. I hope that you found this valuable. Happy coding!
 
+**If you enjoyed this post, please share it on your social media. Thank you and happy coding!**
+
+
+*Photo by 贝莉儿 DANIST on Unsplash*
