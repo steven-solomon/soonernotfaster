@@ -7,11 +7,14 @@ enableRobotsTXT = true
 theme = "ananke"
 pygmentsCodeFences = true
 
+[params]
+  custom_css = ["css/custom.css"]
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
-  
+
 [menu]
 
 [[menu.main]]

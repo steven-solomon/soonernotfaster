@@ -1,0 +1,9 @@
+@media screen and (min-width: 60em) {
+  .w-two-thirds-l {
+    width: 100% !important;
+  }
+}
+
+pre code {
+  overflow: scroll !important;
+}
