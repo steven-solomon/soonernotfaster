@@ -63,4 +63,4 @@ We stopped our conversation, as the aroma of roasted garlic, tomatoes, and olive
 
 That conversation with Patty sticks in my mind, I think about it whenever I start a new project or have to set expectations with someone. Patty taught me that setting expectations on day one, allows everyone to know how to win.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

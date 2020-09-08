@@ -125,4 +125,4 @@ Building software is challenging. Even something as simple as 15 lines of code a
 ### Special Thanks
 Thanks to [J.B Rainsberger](https://twitter.com/jbrains) for participating.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

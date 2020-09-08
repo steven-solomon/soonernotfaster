@@ -48,6 +48,6 @@ Lastly, if you are unsure how to remove the duplication, its okay to leave it. [
 # TLDR;
 [The DRY Principle is misunderstood](/posts/dont-repeat-yourself-is-misunderstood/). This misunderstanding leads to invalid abstractions, which change for many reasons, causing bugs in unrelated parts of the system.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Oliver Hale on Unsplash*

@@ -103,6 +103,6 @@ Contract tests are a great way to verify that multiple subsystems act the same w
 
 Source code for this [contract testing example](https://github.com/steven-solomon/video_game_example/tree/contract-test-blog)
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Tuân Nguyễn Minh on Unsplash*

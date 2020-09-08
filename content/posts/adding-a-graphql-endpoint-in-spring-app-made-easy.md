@@ -163,6 +163,6 @@ Links
 
 Complete Code here: https://github.com/steven-solomon/graphql
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Dan Meyers on Unsplash*

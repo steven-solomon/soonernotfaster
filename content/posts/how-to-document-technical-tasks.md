@@ -27,4 +27,4 @@ As with all things there are trade-offs. It is up to you to appropriately apply 
 - Write a document in iterations, then follow mantra: “once, twice, automate”
 - Don’t maintain documents you don’t need
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

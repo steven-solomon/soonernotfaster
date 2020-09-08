@@ -23,4 +23,4 @@ There is one other scenario where refactoring is beneficial, it is when we refac
 
 There are two types of refactoring that are part of user stories and one that isn’t. Refactoring as part of the TDD flow and when adding new features, is part of a user story. Whereas, refactoring to bring structural uniformity across the system, must be done with agreement between engineers and product managers. I recommend leaning on the types that are part of user stories and doing [technical retrospectives](/posts/technical-retrospective-what-why-how/) to incrementally bring structural uniformity.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

@@ -28,4 +28,4 @@ It takes patience and endurance not switch tasks. Figuring out how to eliminate 
 # TLDR; 
 Task switching when blocked is caused by waiting, which is a type of production waste. So don’t switch tasks, instead make the production process more efficient.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

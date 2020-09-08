@@ -15,4 +15,4 @@ I attempt to reset expectations by reframing my thoughts. Thinking first from th
 
 Finally I remind myself that jumping to some arbitrary set of practices might actually hurt the team I am currently on. I also note that, such a move is inherently contradictory to the values espoused by the agile movement. It would put a "fun" process ahead of people.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

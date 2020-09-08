@@ -96,6 +96,6 @@ Liz and Mike both nod in agreement. The team goes back to their desks feeling co
 
 This is an excerpt from the book I am writing called Agile Software In Process. It is available now at [https://leanpub.com/agilesoftware](https://leanpub.com/agilesoftware).
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Dylan Gillis on Unsplash*

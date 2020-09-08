@@ -230,6 +230,6 @@ You can act on the feedback of your code being difficult to test in the followin
 
 It may be tempting to try and find ways to invoke your private class using the reflection APIs of the language, but this will make your tests brittle, and hard to read. Whenever possible, it is better to simplify the design of the code, rather than come up with cunning solutions.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Micah Williams on Unsplash*

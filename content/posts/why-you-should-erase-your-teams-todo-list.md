@@ -21,4 +21,4 @@ I want my team to celebrate their progress. In order to celebrate, they need to 
 
 *If an action is truly important, it will come back.*
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

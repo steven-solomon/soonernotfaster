@@ -181,4 +181,4 @@ Now we know from experience that the DRY Principle is actually about removing du
 
 [Duplication is cheaper than the wrong abstraction — Sandi Metz](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

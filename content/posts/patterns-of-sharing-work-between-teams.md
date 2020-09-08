@@ -49,6 +49,6 @@ Teams can become blocked until the new features are delivered.
 
 Sharing work can bog down teams. Frameworks and subsystems are two patterns of sharing work but they should be used with caution. Sometimes it is faster if each team builds smaller versions of frameworks or subsystems.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Elaine Casap on Unsplash*

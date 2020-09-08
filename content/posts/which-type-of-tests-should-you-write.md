@@ -37,6 +37,6 @@ When deciding on test size, I recommend starting large at the highest level of a
 
 We have discussed the outcomes each type of test can bring to a codebase. Focusing on outcomes is beneficial to many aspects of a project. In this case, it will lead us to a better-designed test suite, and more confidence as we ship early and often.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Viswanath V Pai on Unsplash*

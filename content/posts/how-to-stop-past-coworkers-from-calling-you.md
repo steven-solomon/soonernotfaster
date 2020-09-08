@@ -70,7 +70,7 @@ Sure, it is not as pretty as chained functions but it does something more import
 
 There has a been a big push lately to use function chaining in order to eliminate imperative code. While I believe that this is mostly a good thing, I have seen engineers become tempted to collapse large swaths of a system into a giant method chain. While it is true that you can do this, it is probably not a good idea. Fewer lines of code doesn’t mean the code is easier to understand. Your coworkers probably won’t be able to read it a few months from today and maybe you won’t be able to either. Readability for our team should be the most important design constraint (in most cases).
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Code example taken from a great Javascript Youtube channel, [Fun Fun Function](https://www.youtube.com/watch?v=UD2dZw9iHCc&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84&index=11)*
 

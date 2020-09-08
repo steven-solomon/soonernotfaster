@@ -326,6 +326,6 @@ Invalid states can be a stumbling block for those modifying your code. Making th
 
 Remember to move states to one place in the program, find ways to communicate which states are mutually exclusive, and eliminate unnecessary states from your program.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Malcolm Lightbody on Unsplash*

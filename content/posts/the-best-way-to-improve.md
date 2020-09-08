@@ -14,4 +14,4 @@ Before starting to stop, ask yourself for quantities not just qualities. Decide 
 
 Now that the prediction is in writing, notice how right or wrong we were. In both cases, celebrate what was learned. When learning is valued and celebrated, your team continuously improves.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

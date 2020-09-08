@@ -53,6 +53,6 @@ Sometimes the team needs to take a step back and celebrate. A code and tell invi
 Techtro can be a great tool to help them own software delivery and yield the progress that the whole team wants. Suggest that your team tries a techtro at your next retro. You might find that they enjoy it.
 I recently wrote about what a techtro looks like using a narrative format. Check it out here: [What the Heck is a  Technical Retrospective?](/posts/what-the-heck-is-a-techtro/)
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Francesco Gallarotti on Unsplash*

@@ -415,8 +415,6 @@ end
 
 Our code now separates business logic from the delivery mechanism—the GenServer. You are now able to increase the Cohesion of your code by using the *Extract Module* refactoring. This is a critical step in the journey to writing code that is easy to read, and maintain.
 
-
-**If you enjoyed this post, please share it on your social media. Thank you and happy coding!**
-
+{{< thank-you >}}
 
 *Photo by 贝莉儿 DANIST on Unsplash*

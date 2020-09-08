@@ -35,4 +35,4 @@ I slid to the edge of my seat as I hit the green play button — which runs 
 
 Every new feature I write, fills me with joy in the same way that my first “hello world” did. That is why I keep writing software.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

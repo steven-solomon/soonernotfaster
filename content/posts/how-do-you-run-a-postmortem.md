@@ -65,4 +65,4 @@ Continuous improvement is an essential principle in agile software development. 
 
 I hope that this post based on [the 6 Thinking Hats](http://www.retrospectivewiki.org/index.php?title=6_Thinking_Hats_Retrospective), helps your team improve today.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}

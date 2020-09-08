@@ -22,6 +22,6 @@ The product team is in a difficult place as well, the quality of the product is 
 
 Quality is what allows the business to keep delivering value to users. While their are many heuristics for quality, I believe the best one is the changeability of the code. We need to work with our product team to make sure they understand the risks but more importantly not sign up for debt we can’t pay off.
 
-**If you enjoyed this post, please share it on your social media. Thanks!**
+{{< thank-you >}}
 
 *Photo by Cytonn Photography on Unsplash*

@@ -49,4 +49,6 @@ Using lean techniques helped me have the courage to start blogging. I hope that 
 
 I can’t wait to read your posts!
 
+{{< thank-you >}}
+
 *Photo by Christin Hume on Unsplash*
