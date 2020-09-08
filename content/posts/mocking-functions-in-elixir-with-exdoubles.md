@@ -165,6 +165,6 @@ end
 
 I have been using [ExDoubles](https://hex.pm/packages/exdoubles) day to day on my current project, but that is just one data point. If you are using Elixir, I would love to hear your thoughts. If you aren't using Elixir, maybe this is a reason for you to give it a try.
 
-**If you enjoyed this post, please share it on your social media. Thank you and happy coding!**
+{{< thank-you >}}
 
 *Photo by Dominik Scythe on Unsplash*
