@@ -1,10 +1,10 @@
 ---
-title: "How to Run an Effective Agile Demo: a Secret Way to Build Stakeholder Trust"
+title: "How to Run an Effective Agile Demo: A Secret Way to Build Stakeholder Trust"
 date: 2020-09-14T07:44:39-04:00
 draft: true
 ---
 
-As a developer on a scrum team, you have likely watched helplessly as the pressure from stakeholders mounts. Despite each sprint producing multi-hour planning meetings, and Gannt or Burndown charts, your leaders never seem to be satisfied with the current progress: due to a lack of trust.
+As a developer on a scrum team, you have likely watched helplessly as the pressure from stakeholders mounts. Despite each sprint producing multi-hour planning meetings, and Gannt or Burndown charts, your leaders never seem to be satisfied with the current progress. This common situation is due to a lack of trust.
 
 Trust is not built only with charts and graphs, but by showing management what you are building. Leadership wants to see the application they’ve invested in coming to life. Though no stakeholder asks for it, they want a demo.
 
@@ -19,8 +19,6 @@ You’ll want to start a demo with the most important aspect of your project: wo
 Demoing from production means showing stakeholders completed work that’s ready for users. Displaying working software shifts the discussion away from “when will it be done?” to “what should it do next?”
 
 “What should it do next?” is a great question that allows you to discuss priorities with leadership in a collaborative way. It gives them the opportunity to steer the project. In this type of discussion, you are no longer a line on a chart, but a team with a track record for accomplishing work.
-
-The demo also is a chance for the team to consistently display progress, which is a core element at the heart of building trust.
 
 Demos have a lot of benefits but they are not free. They require you to work in a way where user value is the outcome of each task. A common practice in the agile community is to build vertically sliced stories, which include all the layers of an application. However, if your team isn’t building vertically sliced features, then demoing will be difficult. In this case, you should try talking with your product manager, as they may be open to experimenting with vertically sliced stories for a short period of time.
 
@@ -70,11 +68,11 @@ If last time the design was nitpicked, consider taking note to make sure the des
 Here’s the main things you should consider when scheduling your first demo:
 
 1. Invite individuals impacted by your team’s work
-  a. Craft and invite that lets them know why they should attend
+    - Craft and invite that lets them know why they should attend
 2. Decide what software to demo
-  a. Choose a member of your team to demo it
+    - Choose a member of your team to demo it
 3. Invite questions after demoing
-  a. If questions go longer than 5 minutes, schedule a follow up meeting
+    - If questions go longer than 5 minutes, schedule a follow up meeting
 4. Ask leaders for help overcoming blockers
 5. After the demo, have a team discussion on how the demo should improve
 6. Schedule the next demo
