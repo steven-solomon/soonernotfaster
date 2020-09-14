@@ -84,3 +84,5 @@ Now that you know some of the secrets, you are ready to start building trust wit
 Best of luck on your first demo!
 
 {{< thank-you >}}
+
+*Photo by israel palacio on Unsplash*
