@@ -69,7 +69,7 @@ If last time the design was nitpicked, consider taking note to make sure the des
 Here’s the main things you should consider when scheduling your first demo:
 
 1. Invite individuals impacted by your team’s work
-    - Craft and invite that lets them know why they should attend
+    - Craft an invite that lets them know why they should attend
 2. Decide what software to demo
     - Choose a member of your team to demo it
 3. Invite questions after demoing
