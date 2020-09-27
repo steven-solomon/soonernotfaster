@@ -27,16 +27,15 @@ pygmentsCodeFences = true
     weight = -110
 
 [[menu.main]]
-    identifier = "blog"
-    name = "blog"
-    title = "blog posts about software development"
-    url = "/"
-    weight = -110
-
-[[menu.main]]
     identifier = "about"
     name = "about me"
     title = "all about Steven Solomon"
     url = "/about/"
     weight = -110
 
+[[menu.main]]
+    identifier = "contact"
+    name = "contact"
+    title = "contact"
+    url = "/contact/"
+    weight = -110
