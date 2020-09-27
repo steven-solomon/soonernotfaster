@@ -34,6 +34,13 @@ pygmentsCodeFences = true
     weight = -110
 
 [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    title = "blog"
+    url = "/"
+    weight = -110
+
+[[menu.main]]
     identifier = "contact"
     name = "contact"
     title = "contact"
