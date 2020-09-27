@@ -9,6 +9,8 @@ pygmentsCodeFences = true
 
 [params]
   custom_css = ["css/custom.css"]
+  twitter = "https://twitter.com/soonernotfaster"
+  linkedin = "https://www.linkedin.com/in/steven-solomon-86745a24/"
 
 [sitemap]
   changefreq = "monthly"
