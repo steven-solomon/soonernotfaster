@@ -5,9 +5,11 @@ images: ["images/how_to_test_private_methods_in_ruby_and_rails.jpeg"]
 date: 2019-10-09T09:18:08-04:00
 ---
 
-So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more your changes are to private methods of a class. In frustration you shout, "How do I test this code?"
+So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more your changes are to private methods of a class. In frustration, you shout, "How do I test this code?"
 
-**Testing private methods may seem difficult when not using TDD, but this article gives you two strategies: "testing via the public interface", and "move methods to a different class". These will make your life easier, so that you can get your feature merged.**
+**The key to testing private methods in any language is to test them through the public ones.**
+ 
+ To this end, you have two strategies to try: "testing via the public interface", or "move methods to a different class" and test them there. These will make your life easier, so that you can get your feature merged.
 
 # Strategy 1: Test via the public interface 
 
