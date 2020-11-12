@@ -230,7 +230,7 @@ You can act on the feedback of your code being difficult to test in the followin
 1. Test via the public methods of the class
 2. Move the method to another class and make it public
 
-It may be tempting to try and find ways to invoke your private class using the reflection APIs of the language, but this will make your tests brittle, and hard to read. Whenever possible, it is better to simplify the design of the code, rather than come up with cunning solutions.
+It may be tempting to try and find ways to invoke your private method using the reflection APIs of Ruby, but this will make your tests brittle, and hard to read. Whenever possible, it is better to simplify the design of the code, rather than come up with cunning solutions.
 
 {{< thank-you >}}
 
