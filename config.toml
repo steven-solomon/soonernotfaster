@@ -21,13 +21,6 @@ pygmentsCodeFences = true
 [menu]
 
 [[menu.main]]
-    identifier = "book"
-    name = "book"
-    title = "book"
-    url = "https://leanpub.com/agilesoftware"
-    weight = -110
-
-[[menu.main]]
     identifier = "about"
     name = "about me"
     title = "all about Steven Solomon"
