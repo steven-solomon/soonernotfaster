@@ -3,6 +3,7 @@ title: "Why You Should Do One Story Until It's Done"
 featured_image: "images/why_you_should_do_one_story_until_it_is_done.jpeg"
 images: ["images/why_you_should_do_one_story_until_it_is_done.jpeg"]
 date: 2018-05-28T08:44:22-04:00
+tags: ['process']
 ---
 
 Writing software is at its core a production system. The goal is to produce a product with just the right quality, at just the right time, so that customers find it valuable. With that in mind, let’s look at the types of things that can stop us from producing on time or at the right quality. There are 7 types of waste in a production system. They are:

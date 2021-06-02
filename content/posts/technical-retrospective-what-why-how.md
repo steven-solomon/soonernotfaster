@@ -4,6 +4,7 @@ description: "What, Why, How?"
 featured_image: "images/technical_retrospective_what_why_how.jpeg"
 images: ["images/technical_retrospective_what_why_how.jpeg"]
 date: 2018-05-09T08:06:54-04:00
+tags: ['process']
 ---
 
 Is your development team frustrated? Do they seem like they are going slower? Maybe you ask yourself, “Are they working hard enough?”

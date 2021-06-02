@@ -3,6 +3,7 @@ title: "Learn Programing by Intention: A Long Forgotten Programming Technique"
 featured_image: "images/learn_programing_by_intention.jpeg"
 images: ["images/learn_programing_by_intention.jpeg"]
 date: 2018-05-20T21:02:35-04:00
+tags: ['ruby', 'coding', 'design']
 ---
 
 I want to tell you about an alternate design technique, it is called programming by intention. Rather than writing code that describes how to perform some action, you call a function. The interesting thing is the function doesn’t exist. Yet, we are going to call it as if someone wrote it ten minutes ago. We are going to follow a loop of call a function that doesn’t yet exist, implement what it does by calling more functions that don’t exist, until we have to implement the real code. Let’s try it out.

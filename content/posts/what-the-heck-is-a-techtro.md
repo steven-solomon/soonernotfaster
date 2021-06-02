@@ -3,6 +3,7 @@ title: "What the Heck Is a Techtro?"
 featured_image: "images/what_the_heck_is_a_techtro.jpeg"
 images: ["images/what_the_heck_is_a_techtro.jpeg"]
 date: 2019-03-28T08:15:42-04:00
+tags: ['process']
 ---
 
 “Welcome to Techtro,” says Tim, as he writes the daunting term on the whiteboard in black marker. The tall blonde man boldly stands in front of his bewildered team jammed in a conference room. He calmly returns their awestruck stare while placing the marker back on the ledge of the movable whiteboard.

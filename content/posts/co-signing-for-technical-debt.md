@@ -3,6 +3,7 @@ title: "Co-Signing for Technical Debt"
 images: ["images/co_signing_for_technical_debt.jpeg"]
 featured_image: "images/co_signing_for_technical_debt.jpeg"
 date: 2018-06-25T09:03:53-04:00
+tags: ['process']
 ---
 
 Product and engineering need to see each other as co-signers on technical debt. The idea isn’t to say “no” to all [technical debt](http://wiki.c2.com/?TechnicalDebt), as you will definitely have to take some on. Rather, we need to have open and honest discussions about the state of the code and why certain design elements need to be fixed now and which ones can be deferred. Collectively balancing the need to deliver in the short vs long term.

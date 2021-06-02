@@ -3,6 +3,7 @@ title: "How Do You Run a Postmortem?"
 images: ["/images/how_to_run_a_postmortem.jpeg"]
 featured_image: "/images/how_to_run_a_postmortem.jpeg"
 date: 2018-09-17T15:29:13-04:00
+tags: ['process']
 ---
 
 Our process has failed us! The payment feature went offline, our team doesn’t have shippable code, and a user story has been in progress for two weeks. In order to deliver software at a consistent pace, it is essential that agile teams iterate on how they work. Below I describe the steps to facilitate a retrospective to address these problems.

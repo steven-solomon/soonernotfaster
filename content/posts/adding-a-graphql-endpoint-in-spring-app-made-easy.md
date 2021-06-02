@@ -3,6 +3,7 @@ title: "Adding GraphQL to Your Spring App: Made Easy"
 images: ["images/adding_a_graphql_endpoint_in_spring_app_made_easy.jpeg"]
 featured_image: "images/adding_a_graphql_endpoint_in_spring_app_made_easy.jpeg"
 date: 2018-08-13T07:42:43-04:00
+tags: ['java', 'coding']
 ---
 
 I am sure that you have heard about [GraphQL](https://www.youtube.com/watch?v=Oh5oC98ztvI). It is the latest pattern that everyone is talking about. I want to walk you through adding your first GraphQL Endpoint.

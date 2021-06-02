@@ -3,6 +3,7 @@ title: "Testing Patterns in Ruby: Contract Testing"
 featured_image: "images/testing_patterns_in_ruby_contract_testing.jpeg"
 images: ["images/testing_patterns_in_ruby_contract_testing.jpeg"]
 date: 2018-08-20T07:58:57-04:00
+tags: ['ruby', 'coding', 'testing']
 ---
 
 *Maintain shared behavior of multiple implementations by making them pass the same tests.*

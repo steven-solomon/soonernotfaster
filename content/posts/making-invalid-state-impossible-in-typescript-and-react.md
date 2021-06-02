@@ -3,6 +3,7 @@ title: "Making Invalid State Impossible: in TypeScript and React"
 featured_image: "images/making_invalid_state_impossible_in_typescript_and_react.jpeg"
 images: ["images/making_invalid_state_impossible_in_typescript_and_react.jpeg"]
 date: 2018-10-29T21:14:59-04:00
+tags: ['frontend', 'design', 'coding']
 ---
 
 Since most applications can be represented by state machines, it is beneficial to make valid states in your program as clear as possible and invalid states impossible. This will enhance the readability, and maintainability of your code to everyone who sees it, including future you.

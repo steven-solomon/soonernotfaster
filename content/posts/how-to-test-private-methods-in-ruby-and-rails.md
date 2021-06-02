@@ -3,6 +3,7 @@ title: "How to Test Private Methods in Ruby and Rails?"
 featured_image: "images/how_to_test_private_methods_in_ruby_and_rails.jpeg"
 images: ["images/how_to_test_private_methods_in_ruby_and_rails.jpeg"]
 date: 2019-10-09T09:18:08-04:00
+tags: ['ruby', 'testing', 'coding']
 ---
 
 So you have written an implementation for that new feature in your Rails app, but your team won't accept your Pull Request until there are unit tests. What's more your changes are to private methods of a class. In frustration, you shout, "How do I test this code?"

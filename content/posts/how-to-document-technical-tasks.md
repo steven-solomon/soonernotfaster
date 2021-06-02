@@ -3,6 +3,7 @@ title: "How to Document Technical Tasks"
 featured_image: "/images/technical_tasks.jpeg"
 images: ["/images/technical_tasks.jpeg"]
 date: 2019-05-10T14:46:55-04:00
+tags: ['process']
 ---
 
 I want to briefly speak to you about the strategies that I use when writing technical documentation on my teams.

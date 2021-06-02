@@ -3,6 +3,7 @@ title: "Why I Manage My Expectations"
 featured_image: "images/why_i_manage_my_expectations.jpeg"
 images: ["images/why_i_manage_my_expectations.jpeg"]
 date: 2018-05-11T08:00:37-04:00
+tags: ['communication', 'process']
 ---
 
 Years ago, I watched Kent Beck's talk on [finding ease at work](https://www.youtube.com/playlist?list=PL449186E0DF971104). He described death marches and unsustainable pace. He told stories of people having their humanity ignored, resulting in burn out and depression. Though, I was yet to experience life as part of a development team, my college experience allowed me to identify with those stories.

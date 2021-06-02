@@ -3,6 +3,7 @@ title: "Mocking Functions in Elixir With ExDoubles"
 date: 2019-12-29T09:39:38-05:00
 featured_image: "images/mocking_functions_in_elixir_with_exdoubles.jpeg"
 images: ["images/mocking_functions_in_elixir_with_exdoubles.jpeg"]
+tags: ['elixir', 'coding', 'testing']
 ---
 So I would have considered this crazy a few years ago, but I wrote my own mock framework in Elixir called [ExDoubles](https://hex.pm/packages/exdoubles). 
 

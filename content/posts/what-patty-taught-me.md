@@ -3,6 +3,7 @@ title: "What Patty Taught Me"
 featured_image: "/images/what_patty_taught_me.jpeg"
 images: ["/images/what_patty_taught_me.jpeg"]
 date: 2019-02-19T15:42:24-04:00
+tags: ['communication']
 ---
 
 Two summers ago, I spent some time in Georgia. It was a different universe than the crowded streets and fast pace of New York City — where I live now. Laying down roots and connecting with people was as easy as breathing.

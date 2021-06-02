@@ -3,7 +3,7 @@ title: "Step by Step Guide to Improving Cohesion in Elixir"
 featured_image: "images/step_by_step_guide_to_improving_cohesion_in_elixir.jpeg"
 images: ["images/step_by_step_guide_to_improving_cohesion_in_elixir.jpeg"]
 date: 2020-05-25T11:04:29-04:00
-draft: false
+tags: ['elixir', 'coding']
 ---
 
 It is the kind of code that makes you squint. It could be that stray business logic in a controller, a view that queries the database, or even two intertwined features that change for different reasons. I am talking about code that is hard to read.

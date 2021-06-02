@@ -3,6 +3,7 @@ title: "How to Run an Effective Agile Demo: A Secret Way to Build Stakeholder Tr
 date: 2020-09-14T07:44:39-04:00
 featured_image: "images/how_to_run_an_effective_agile_demo_a_secret_way_to_build_stakeholder_trust.jpeg"
 images: ["images/how_to_run_an_effective_agile_demo_a_secret_way_to_build_stakeholder_trust.jpeg"]
+tags: ['process']
 ---
 
 As a developer on a scrum team, you have likely watched helplessly as the pressure from stakeholders mounts. Despite each sprint producing multi-hour planning meetings, and Gannt or Burndown charts, your leaders never seem to be satisfied with the current progress. This common situation is due to a lack of trust.
