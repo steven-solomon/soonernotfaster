@@ -1,6 +1,8 @@
 ---
-title: "How to Randomize Tests in Junit with Gradle"
+title: "How to Randomize Tests in JUnit with Gradle"
 date: 2021-09-22T08:00:36-04:00
+featured_image: "images/how_to_randomize_tests_in_junit.jpeg"
+images: ["images/how_to_randomize_tests_in_junit.jpeg"]
 tags: ['java', 'testing']
 ---
 
