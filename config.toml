@@ -21,6 +21,13 @@ pygmentsCodeFences = true
 [menu]
 
 [[menu.main]]
+    identifier = "learn tdd"
+    name = "learn tdd"
+    title = "all about Steven Solomon"
+    url = "https://www.manning.com/liveprojectseries/tdd-for-a-shopping-web-site?utm_source=solomons&utm_medium=affiliate&utm_campaign=liveproject_solomon_tdd_12_21_21&a_aid=solomons&a_bid=175986d2"
+    weight = -110
+
+[[menu.main]]
     identifier = "about"
     name = "about me"
     title = "all about Steven Solomon"
