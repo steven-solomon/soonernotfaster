@@ -11,7 +11,7 @@ Software provides an opportunity to automate the boring rote tasks of day to day
 
 In the same way software amplifies the effectiveness of the customer, I work to build up my team by trying to model the values of simplicity, communication, feedback, respect, and courage in everything I do. This includes helping create situations where collaboration is fun and easy, the code being written is readable and changeable by anyone, I am in a position to help the team, and everyone is empowered to participate in crafting our process. 
 
-As my career continues to progress, I want to share what I have learned with those I don't get to work with on a daily basis through my writing and technical talks. This site contains my blog posts, and a book I am actively working on—[available now on LeanPub](https://leanpub.com/agilesoftware). I hope you find the content fun, engaging, and informative. 
+I want to share what I have learned with all developers, globally. To that end, I have published a liveProject series on manning.com, titled [TDD for a Shopping Website](https://www.manning.com/liveprojectseries/tdd-for-a-shopping-web-site?utm_source=solomons&utm_medium=affiliate&utm_campaign=liveproject_solomon_tdd_12_21_21&a_aid=solomons&a_bid=175986d2). This series shows you how to use test-driven development with a focus on shipping customer value sooner. And how TDD enables incremental design improvements without stopping to rewrite the entire system.
 
 Happy Coding
 
