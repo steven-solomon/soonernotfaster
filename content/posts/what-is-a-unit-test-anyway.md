@@ -19,6 +19,8 @@ Once the element is set up, it will need to invoke the part of the system under 
 
 Although, most teams only discuss the three parts of the unit test, there is actually a forth, its name. The name is also an opportunity to emphasize the elements that you want to communicate to the developer who is reading your code.
 
+Below are two examples of how to structure the elements of a unit test in both Java and JavaScript. The Java example uses JUnit 4 syntax and an assertion library known as AssertJ to communicate context (pre-conditions), the software element (sut), and the expected output (post-conditions) both via the content of the test and the test's name. Within the JavaScript example the same information is communicated via nested blocks—this nesting style is now possible in Java via JUnit 5. 
+
 ```
 @Test
 void returnsMapWithOneElement_whenListOnlyContainsDuplicates() {
@@ -51,6 +53,10 @@ describe('.groupProductsByName', () => {
     });    
 });
 ```
+
+The tradeoff between these the nesting and helper method approaches are in the number of tests. Nesting can be a beneficial way to isolate groupings of tests, much like a subheading in an article. However, nesting too deeply can make the context that the test is executing hard to change and fragile. Conversely, the Java code shows the helper method structuring where common setup methods are created to hide the noise of the setup away from the reader so they can quickly glean the context. The helper method style can suffer when there are a large number of tests; the reader will not be able to quickly determine which tests are related or similar scenarios.
+
+Although these two styles are displayed separately, the easiest to read tests use a mix of both strategies. They organize the tests into logical groupings and utilize helpers methods to create dependencies that are common across related contexts.
 
 # What should be tested in a unit test
 scope of the test 
