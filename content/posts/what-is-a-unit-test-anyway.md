@@ -4,6 +4,17 @@ date: 2021-12-28T10:42:34-05:00
 draft: true
 ---
 
+They say one unit test per function; You say one unit test per idea. Or maybe it’s the reverse. Since I started teaching developers test-driven development in 2010, I have rarely found a space where the definition of the word "unit" didn’t yield a giant debate—even around those folks who themselves are experienced TDD practitioners. Rather than retread the arguments around categories, I would like to focus on the outcome that having unit tests can create.
+
+The most important outcome of unit tests is that the intention for part of the system is communicated between software developers. Each test suite is a living document that makes it easy for engineers to see the element(s) being tested, the context, and the expectations for some functionality of the system. And its accuracy is verified when the tests pass. With the purpose of a unit test defined, we can talk about different strategies to make this intention clear: the parts of a unit test, how to structure a suite of tests, and how to reduce the test’s coupling to the implementation.
+
+
+# What is a unit
+
+A unit test can contain any number of classes or functions that represent the test subject. They should follow the constraints laid out by Robert Martin in his book Clean Code, namely that they should be Fast, Independent, Repeatable, Self-validating, and Timely. These criteria vastly limit what can be present in the context of a unit test. For instance a slow database query can't be within the execution path of the test subject or the test will not be fast. And if multiple tests interact with an external system that provides both read or write capabilities like a REST or GraphQL API then the tests won't be independent, making them likely to be flaky, flickering green and then red, with no change to the application code. 
+
+So in general, a unit test does not include any elements that are outside the system being tested, this includes a database, external HTTP based API, interactions with the file system. However, a unit test can contain multiple collaborating objects if the test author wants to create tests that still have  
+
 # What are the parts of a unit test
 
 Typically, you will hear engineers talk about three parts of a unit test—there are actually four which I will discuss in a moment. The three most discussed parts are the setup, the exercise of the system under test (SUT), and the verification. Teams will likely refer to this trio as “arrange-act-assert”.
