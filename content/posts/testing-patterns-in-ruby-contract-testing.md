@@ -39,7 +39,7 @@ shared_examples 'VideoGameService Contract' do
 end
 ```
 
-This contract is utilized by using the it_behaves_like method from RSpec. Allowing the tests to be included inside the describe block for InMemoryVideoGameService.
+This contract is utilized by using the `it_behaves_like` method from RSpec. Allowing the tests to be included inside the `describe` block for InMemoryVideoGameService.
 
 ```ruby
 describe InMemoryVideoGameService do
@@ -49,7 +49,7 @@ describe InMemoryVideoGameService do
 end
 ```
 
-Theses same shared specs can be applied to the HttpVideoGameService.
+These same shared specs can be applied to the HttpVideoGameService.
 
 ```ruby
 describe HttpVideoGameService do
