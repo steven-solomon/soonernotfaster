@@ -40,15 +40,15 @@ Tim suddenly warns, “Time is up, finish your current sticky.” He stands up f
 
 “Shh don’t say that,” scolds Tim. His eyes growing wide at the very idea. He places the stickies on the whiteboard. “Alright, Liz, what do you have?”
 
-“I am really proud of the user purchase graph code that Mike and I wrote last week,” she says with excitement. “We used a doubly linked list to do the interpolation math. It was very elegant,” she chimes in, with an ear to ear smile. “I didn’t think I would ever use data structures after college.”
+“I am really proud of the user purchase graph code that Mike and I wrote last week,” she says with excitement. “We used a doubly linked list to do the interpolation math. It was very elegant,” she chimes in, with an ear to ear smile. “I didn't think I would ever use data structures after college.”
 
 Tim takes her sticky note, and places it in the "What code are you proud of" category. He agrees, “That’s awesome. You get another one.”
 
-Liz winces a little bit, “I’m not sure how to say this but…I hope that we get to keep growing the team. I mean, Tim since you are in lots of meetings, Mike and I are pairing almost everyday.” Mike’s face shows a glimpse of tiny frown, so Liz quickly adds, “I like pairing with you Mike, but I just want to keep learning from both of you.” Mike gives a head nod, seeming to accept her explanation.
+Liz winces a little, “I’m not sure how to say this but…I hope that we get to keep growing the team. I mean, Tim since you are in lots of meetings, Mike and I are pairing almost every day.” Mike’s face shows a glimpse of tiny frown, so Liz quickly adds, “I like pairing with you Mike, but I just want to keep learning from both of you.” Mike gives a head nod, seeming to accept her explanation.
 
 “I have that one too,” says Tim, adding his sticky to the left of Liz’s note.
 
-The team continues to go around until all of the stickies are on the board, stopping briefly to talk about what each one means.
+The team continues to go around until all the stickies are on the board, stopping briefly to talk about what each one means.
 
 “Alright,” Tim says. He clears his throat, “Now for the most important part.” He writes the phrase Actions Items on the far right side of the board. “We are going to dot-vote on which New Things to Try and Like to Change stickies. Everyone gets two votes.” A perplexed Mike asks, “How do we vote?”
 “Grab a marker and draw a dot near the sticky you want,” responds Tim, with a smile. “Oh use the whiteboard markers please.”
@@ -59,7 +59,7 @@ The team continues to go around until all of the stickies are on the board, stop
 
 As Liz and Mike approach the whiteboard, Tim steps back to let them vote. Mike frantically glances around the board trying to decide. Liz votes without hesitation on “growing the team”, and “breaking apart user stories”. Mike adds a vote to “growing the team”, but uses his second vote for “one free hour a week”.
 
-As they return to their seats, Mike turns toward Tim, “Aren’t you voting?”
+As they return to their seats, Mike turns toward Tim, “Aren't you voting?”
 
 “When the team is this small, I will refrain,” replies Tim. “I want to make sure that you both have as much control over our process as possible. As Liz pointed out earlier, I am in lots of meetings. If I have a concern, I will make sure to voice it.”
 
@@ -76,7 +76,7 @@ After a few seconds, Tim nudges, “How about you talk to her as a pair?”
 
 Tim assures them, “Without a doubt. In that case, I am assigning this last item to both of you.” Tim adds their initials next to the action item.
 
-“Whelp, that is Techtro. We will probably do this once every two weeks to start,” says Tim, as he steps back to takes a picture of the action items with his phone.
+“Whelp, that is Techtro. We will probably do this once every two weeks to start,” says Tim, as he steps back to take a picture of the action items with his phone.
 
 Liz tilts her head to the left, “Will we always use this format?”
 
