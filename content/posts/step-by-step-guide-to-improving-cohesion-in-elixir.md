@@ -1,5 +1,5 @@
 ---
-title: "Step by Step Guide to Improving Cohesion in Elixir"
+title: "Step-by-Step Guide to Improving Cohesion in Elixir"
 featured_image: "images/step_by_step_guide_to_improving_cohesion_in_elixir.jpeg"
 images: ["images/step_by_step_guide_to_improving_cohesion_in_elixir.jpeg"]
 date: 2020-05-25T11:04:29-04:00
@@ -34,7 +34,7 @@ If the answer doesn't spring forth, ask yourself, "Can I think about these parts
 
 We can come to the answer of yes, when we notice that identifying a user as an admin, has no effect on what their score is in the game. 
 
-Here are a few other questions to ask so you can determine if code is not Cohesive:
+Here are a few other questions to ask, so you can determine if code is not Cohesive:
 
 1. Do the functions change for different reasons?
 1. Do the functions deal with different types of unrelated behavior?
@@ -46,7 +46,7 @@ The questions above can provide valuable hints that the code may lack Cohesion. 
 
 We can solidify this idea by considering how two unrelated functions interact at different scales.
 
-First, imagine two tiny unrelated functions nestled together in the same module—like the example above. This doesn’t seem like a big deal. Both pieces are small, and we can very quickly determine that they are unrelated.
+First, imagine two tiny unrelated functions nestled together in the same module—like the example above. This doesn't seem like a big deal. Both pieces are small, and we can very quickly determine that they are unrelated.
 
 Next, consider two 65+ line unrelated functions in the same module—along with their associated helpers functions. All of those moving parts provide the opportunity to create confusion. Trying to determine which parts are related, is enough to make anyone's head spin. When the reader can not decide what to focus on, then they will have to re-read code several times.
 
@@ -179,7 +179,7 @@ With our goal of extracting a `BookStore`, it is time to *Rename the existing mo
 end
  ```
 
-Now you can *Create a module with the name of the business concept*. This new module will ultimately hold all of the BookStore logic. Create a new module named `BookStore`.
+Now you can *Create a module with the name of the business concept*. This new module will ultimately hold all the BookStore logic. Create a new module named `BookStore`.
 
 ```
 defmodule BookStore do
