@@ -47,7 +47,7 @@ With everything sorted, it is time to generate action items. Go over the pain po
 
 ## Code and Tell
 
-Sometimes the team needs to take a step back and celebrate. A code and tell invites the team to bring code to the attention of the team. This could be code that they are proud of, or code they think is really well designed and want to thank a team member for creating. Timebox each persons sharing time, so that everyone has a chance to speak.
+Sometimes the team needs to take a step back and celebrate. A code and tell invites the team to bring code to the attention of the team. This could be code that they are proud of, or code they think is really well-designed and want to thank a team member for creating. Time-box each person's sharing time, so that everyone has a chance to speak.
 
 # Conclusion
 
