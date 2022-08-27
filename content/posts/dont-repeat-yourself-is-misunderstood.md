@@ -116,7 +116,7 @@ def random_person
 end
 ```
 
-Now our :random_item function doesn’t work. It is coupled to the fact that jobs was an Array. We can put in a check for the type of data-structure, then map the Hash entries to their values. Giving us an Array of Arrays contain jobs. If we flatten that Array, we are left with all jobs.
+Now our :random_item function doesn't work. It is coupled to the fact that jobs was an Array. We can put in a check for the type of data-structure, then map the Hash entries to their values. Giving us an Array of Arrays containing jobs. If we flatten that Array, we are left with all jobs.
 
 ```ruby
 def random_item(list)
@@ -157,7 +157,7 @@ end
 # ...
 ```
 
-Next we pass :random_item the pets data.
+Next we pass the pet data to :random_item.
 
 ```ruby
 def random_person
@@ -172,9 +172,9 @@ We were about to change how random names work to hack in the ability for random 
 
 **Dry Principle: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.**
 
-According to that definition, our original refactoring didn’t actually follow the DRY Principle at all. Instead of making sure each statement in our code exists once, we should make sure each idea exists once.
+According to that definition, our original refactoring didn't actually follow the DRY Principle at all. Instead of making sure each statement in our code exists once, we should make sure each idea exists once.
 
-So how can we apply the DRY Principle as intended? We ask ourselves, [“Can these two pieces of code be reasoned about separately?”](https://m.facebook.com/notes/kent-beck/bits-clumps-and-just-right/792597974106402) Let’s try that with this situation. Can a random name be reasoned about separately from a random pet? Yes. Since they can, let’s not bind them together, as they will most likely change for different reasons. A block of code that changes for multiple reasons is giving off the code smell of [divergent change](https://refactoring.guru/smells/divergent-change), as it doesn’t follow the [Single Responsibility Principle](http://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html). If we put code that changes for different reasons together, bugs might be introduced in seemingly unrelated parts of the code. These bugs will surprise everyone; our team, our PM and even future us. In a real system, the cost of this type of mistake is much greater and much harder to recover from.
+So how can we apply the DRY Principle as intended? We ask ourselves, [“Can these two pieces of code be reasoned about separately?”](https://m.facebook.com/notes/kent-beck/bits-clumps-and-just-right/792597974106402) Let’s try that with this situation. Can a random name be reasoned about separately from a random pet? Yes. Since they can, let’s not bind them together, as they will most likely change for different reasons. A block of code that changes for multiple reasons is giving off the code smell of [divergent change](https://refactoring.guru/smells/divergent-change), as it doesn't follow the [Single Responsibility Principle](http://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html). If we put code that changes for different reasons together, bugs might be introduced in seemingly unrelated parts of the code. These bugs will surprise everyone; our team, our PM and even future us. In a real system, the cost of this type of mistake is much greater and much harder to recover from.
 
 # Conclusion
 
