@@ -6,7 +6,7 @@ images: ["images/how_to_run_an_effective_agile_demo_a_secret_way_to_build_stakeh
 tags: ['process']
 ---
 
-As a developer on a scrum team, you have likely watched helplessly as the pressure from stakeholders mounts. Despite each sprint producing multi-hour planning meetings, and Gannt or Burndown charts, your leaders never seem to be satisfied with the current progress. This common situation is due to a lack of trust.
+As a developer on a scrum team, you have likely watched helplessly as the pressure from stakeholders mounts. Despite each sprint producing multi-hour planning meetings, and Gantt or Burn-down charts, your leaders never seem to be satisfied with the current progress. This common situation is due to a lack of trust.
 
 Trust is not built only with charts and graphs, but by showing management what you are building. Leadership wants to see the application they’ve invested in come to life. Though no stakeholder asks for it, they want a demo.
 
@@ -34,7 +34,7 @@ When you are anticipating leadership’s needs, it will impress them. So come to
 
 Bring a list of action items that will help the team deliver more software in the next demo. This list should be generated as a group, and crafted to include only the items that leadership needs to help the team with, along with the reasons why it will help. Some examples are asking for help escalating a service ticket with a vendor, or requesting new equipment.
 
-Stakeholders want the project to be successful, so ask for their help executing the solutions to your problems. Sometimes a solution warrants a more in depth discussion, so give the topic the proper amount of attention in a follow-up meeting. This technique will allow you to walk leaders through the problems you see and make a case for the solution you've suggested.
+Stakeholders want the project to be successful, so ask for their help to execute the solutions to your problems. Sometimes a solution warrants a more in depth discussion, so give the topic the proper amount of attention in a follow-up meeting. This technique will allow you to walk leaders through the problems you see and make a case for the solution you've suggested.
 
 # How Often To Run A Demo
 
@@ -54,7 +54,7 @@ When you show working software, it can increase the organizational awareness of 
 
 It is not enough to just show people software; you will also need to allocate time to let them ask questions. It’s important to remember this content is new to your audience, so give attendees a few seconds pause to have a chance to formulate their questions.
 
-For remote teams, you should make sure to leave at least a 10 second pause. It will feel awkward, but it gives additional time for audio delays as well as time to think about their question.
+For remote teams, you should make sure to leave at least a 10-second pause. It will feel awkward, but it gives additional time for audio delays as well as time to think about their question.
 
 If a question’s topic generates a discussion longer than five minutes, you should recommend scheduling a follow-up discussion to make sure others can ask about different topics now. For instance, a deeper discussion on user impact, security, or architecture, are all great topics that may need their own meeting. At the subsequent, session the interested parties will have an opportunity to raise all of their questions.
 
@@ -70,17 +70,17 @@ If last time the design was nitpicked, consider taking note to make sure the des
 Here’s the main things you should consider when scheduling your first demo:
 
 1. Invite individuals impacted by your team’s work
-    - Craft an invite that lets them know why they should attend
+    - Craft an invitation that lets them know why they should attend
 2. Decide what software to demo
     - Choose a member of your team to demo it
 3. Invite questions after demoing
     - If questions go longer than 5 minutes, schedule a follow-up meeting
-4. Ask leaders for help overcoming blockers
+4. Ask leaders for help to overcome blockers
 5. After the demo, have a team discussion on how the demo should improve
 6. Schedule the next demo
 
 
-Now that you know some of the secrets, you are ready to start building trust with demos. By showing working software, your efforts will leap off those Burndown charts by increasing your stakeholder’s awareness of the value you deliver to customers. 
+Now that you know some secrets, you are ready to start building trust with demos. By showing working software, your efforts will leap off those Burn-down charts by increasing your stakeholder’s awareness of the value you deliver to customers. 
 
 Best of luck on your first demo!
 
