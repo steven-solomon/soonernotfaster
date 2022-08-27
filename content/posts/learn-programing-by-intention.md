@@ -6,11 +6,11 @@ date: 2018-05-20T21:02:35-04:00
 tags: ['ruby', 'coding', 'design']
 ---
 
-I want to tell you about an alternate design technique, it is called programming by intention. Rather than writing code that describes how to perform some action, you call a function. The interesting thing is the function doesn’t exist. Yet, we are going to call it as if someone wrote it ten minutes ago. We are going to follow a loop of call a function that doesn’t yet exist, implement what it does by calling more functions that don’t exist, until we have to implement the real code. Let’s try it out.
+I want to tell you about an alternate design technique, it is called programming by intention. Rather than writing code that describes how to perform some action, you call a function. The interesting thing is the function doesn't exist. Yet, we are going to call it as if someone wrote it ten minutes ago. We are going to follow a loop of call a function that doesn't yet exist, implement what it does by calling more functions that don’t exist, until we have to implement the real code. Let’s try it out.
 
 # First Steps
 
-First we call new on a transaction, that doesn’t yet exist.
+First we call new on a transaction, that doesn't yet exist.
 
 ```ruby
 transaction = Transaction.new
@@ -41,7 +41,7 @@ class Transaction
 end
 ```
 
-Now that validate exists, we want to call methods that will help us achieve it’s goal. The function should validate the account id and amount. Again, we don’t think about where that data is coming from yet. We want to focus on the high level policy and describing what should happen, not how. So we call the methods we wish existed, validate_amount, and validate_account_id.
+Now that validate exists, we want to call methods that will help us achieve its goal. The function should validate the account id and amount. Again, we don’t think about where that data is coming from yet. We want to focus on the high level policy and describing what should happen, not how. So we call the methods we wish existed, validate_amount, and validate_account_id.
 
 ```ruby
 class Transaction
@@ -133,11 +133,11 @@ def make_transaction(params)
 end
 ```
 
-We now have a working bit of code that validates and creates a transaction. This loop of call/implement/call allows us to think at the same level of abstraction in each function we write. Only when we can’t delegate anymore do we have to specify a real detail of some behavior.
+We now have a working bit of code that validates and creates a transaction. This loop of call/implement/call allows us to think at the same level of abstraction in each function we write. Only when we can’t delegate anymore, do we have to specify a real detail of some behavior.
 
 # Conclusion
 
-If we follow this declare first, implement later strategy, we can end up with some really clean code. It will be easy to read exactly what is happening. Heck, even our PM could read it and we don’t need tons of comments either. Here is a sample of code that can come from this technique.
+If we follow this declaration first, implement later strategy, can we end up with some clean code. It will be easy to read exactly what is happening. Heck, even our PM could read it, and we don’t need tons of comments either. Here is a sample of code that can come from this technique.
 
 ```ruby
 transaction = make_transaction(params)
