@@ -17,7 +17,7 @@ Contract consistency between your mock and the real implementation is very impor
 
 Let's face it, while Erlang is a very robust and powerful language, it doesn't share syntax with c-style languages. Syntax is one of the strengths of Elixir over Erlang. I prefer when libraries for Elixir, look like Elixir.
 
-With the why out of the way, let me tell you how you can mock and stub functions with ExDoubles.
+With the "why" out of the way, let me tell you how you can mock and stub functions with ExDoubles.
 
 ## Creating mocks
 
@@ -69,7 +69,7 @@ test "returns stubbed value from a mock" do
 end
 ```
 
-If `when_called` is invoked multiple times, each value is returned in the order it was passed.
+If `when_called` is invoked multiple times, each value is returned, in the order it was passed.
 
 ```elixir
 test "returns stubbed values in the order they were passed to `when_called`" do
@@ -85,11 +85,11 @@ test "returns stubbed values in the order they were passed to `when_called`" do
 end
 ```
 
-## What about the trade offs?
+## What about the trade-offs?
 
-Like anything this library has trade offs. You gain the ability to mock functions, but you have to change how you design your system. 
+Like anything this library has trade-offs. You gain the ability to mock functions, but you have to change how you design your system. 
 
-Since ExDoubles only gives the ability to mock functions, you can no longer structure your code so that it can directly calls modules you wish to mock. 
+Since ExDoubles only gives the ability to mock functions, you must structure your code so that it cannot directly invoke functions that you wish to mock. 
 
 Here is an example with the unmockable functions of `CartRepository.fetch_items/1` and `TaxRepository.fetch_tax/1`:
 
