@@ -121,7 +121,7 @@ export class FishTank extends React.Component<{}, FishTankState> {
 
 Now that the initial state of the component is being used to render the “Not Loaded” state, we can attach another state to the enum, “Success”.
 
-Additionally, inside of the `then` callback for the API request, we will transition the `requestStatus` to the “Success” state.
+Additionally, inside the `then` callback for the API request, we will transition the `requestStatus` to the “Success” state.
 
 ```tsx
 import * as React from 'react'
