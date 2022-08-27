@@ -6,7 +6,7 @@ date: 2018-09-10T19:55:33-04:00
 tags: ['testing']
 ---
 
-When test driving a system, it can be tricky to know which type of test to use and when. Rather than talk about the [testing pyramid](https://martinfowler.com/bliki/TestPyramid.html), I want to focus on the questions we want answers to.
+When test-driving a system, it can be tricky to know which type of test to use and when. Rather than talk about the [testing pyramid](https://martinfowler.com/bliki/TestPyramid.html), I want to focus on the questions we want answers to.
 
 Below I have organized feature tests, integration tests and unit tests by the questions that they answer.
 
@@ -18,7 +18,7 @@ The reason that I start with this type of test is that I want to know the answer
 
 Feature tests are usually slower than other types of tests, this is due to the fact that they use the entire system and most of the time a web browser.
 
-Web browsers weren’t designed to make automated testing easy (though that is changing). So leaning on them to make sure every aspect of the application works will result in slow tests — that we probably won’t want to run as often. Running tests less often means that it takes more time to find out if something is broken.
+Web browsers weren't designed to make automated testing easy (though that is changing). So leaning on them to make sure every aspect of the application works will result in slow tests — that we probably won’t want to run as often. Running tests less often means that it takes more time to find out if something is broken.
 
 # Does It Work Like I Expect?
 
