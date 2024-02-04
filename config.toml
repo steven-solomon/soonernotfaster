@@ -2,7 +2,7 @@ baseURL = "https://soonernotfaster.com/"
 languageCode = "en-us"
 title = "Steven Solomon"
 
-googleAnalytics = "UA-147621399-1"
+googleAnalytics = "G-62XB0Z5ZK6"
 enableRobotsTXT = true
 theme = "ananke"
 pygmentsCodeFences = true
