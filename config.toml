@@ -4,7 +4,7 @@ title = "Steven Solomon"
 
 googleAnalytics = "G-62XB0Z5ZK6"
 enableRobotsTXT = true
-theme = "ananke"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 pygmentsCodeFences = true
 
 [params]
